@@ -1,0 +1,4 @@
+{
+  "piority": 40,
+  "includes": ["hooks","ajax"]
+}

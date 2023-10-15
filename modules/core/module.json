@@ -1,0 +1,4 @@
+{
+  "piority": 20,
+  "includes": ["theme-options","layouts","menu-walker","plugins"]
+}
