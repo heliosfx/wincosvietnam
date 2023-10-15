@@ -2,18 +2,15 @@
 
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
-// if (is_admin() && class_exists(YahnisElsts\PluginUpdateChecker\v5\PucFactory::class)) {
-//     $themeUpdater = PucFactory::buildUpdateChecker(
-//         'https://github.com/heliosfx/wincovietnam/',
-//         __FILE__,
-//         'wincosvietnam'
-//     );
-//     //Set the branch that contains the stable release.
-//     $themeUpdater->setBranch('master');
-
-//     //Optional: If you're using a private repository, specify the access token like this:
-//     $themeUpdater->setAuthentication('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');
-// }
+if (is_admin() && class_exists(YahnisElsts\PluginUpdateChecker\v5\PucFactory::class)) {
+    $themeUpdater = PucFactory::buildUpdateChecker(
+        'https://github.com/heliosfx/wincovietnam/',
+        __FILE__,
+        'wincosvietnam'
+    );
+    $themeUpdater->setBranch('master');
+    $themeUpdater->setAuthentication('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');
+}
 define('THEME_DEV_MODE', TRUE);
 define('THEME_VERSION', THEME_DEV_MODE ? time() : '1.0.1');
 define('THEME_DIR', trailingslashit(get_stylesheet_directory()));
