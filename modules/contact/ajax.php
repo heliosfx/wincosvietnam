@@ -1,5 +1,5 @@
 <?php
-class Winco_Contact_Ajax extends Dolazo_Ajax
+class Wincos_Contact_Ajax extends Dolazo_Ajax
 {
     function handle_contact_submit()
     {
@@ -45,4 +45,4 @@ class Winco_Contact_Ajax extends Dolazo_Ajax
         die;
     }
 }
-new Winco_Contact_Ajax();
+new Wincos_Contact_Ajax();

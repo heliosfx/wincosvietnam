@@ -19,7 +19,7 @@
                     'container' => false,
                     'menu_class' => 'vertical-menu nav mobile-menu',
                     'theme_location' => 'primary_mobile',
-                    'walker' => new Winco_Mobile_Menu_Walker(),
+                    'walker' => new Wincos_Mobile_Menu_Walker(),
                 ]) ?>
             </nav>
         </div>
@@ -38,7 +38,7 @@
                             'container' => false,
                             'menu_class' => 'menu nav-pc-body nav d-flex',
                             'theme_location' => 'primary',
-                            'walker' => new Winco_Menu_Walker(),
+                            'walker' => new Wincos_Menu_Walker(),
                         ]) ?>
                     </nav>
                 </div>

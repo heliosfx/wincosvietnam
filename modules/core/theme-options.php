@@ -1,5 +1,5 @@
 <?php
-class Winco_Theme_Options extends Hookable
+class Wincos_Theme_Options extends Hookable
 {
     use Dolazo_Instance_Trait;
     function __construct()
@@ -57,4 +57,4 @@ class Winco_Theme_Options extends Hookable
     }
     
 }
-Winco_Theme_Options::instance();
+Wincos_Theme_Options::instance();

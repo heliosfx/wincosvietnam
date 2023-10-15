@@ -1,9 +1,9 @@
 <?php
-class Winco_Contact_Post_Type extends Base_Post_Type
+class Wincos_Contact_Post_Type extends Base_Post_Type
 {
 }
 
-class Winco_Contact_Hooks extends Hookable
+class Wincos_Contact_Hooks extends Hookable
 {
     use Dolazo_Instance_Trait;
     function __construct()
@@ -31,7 +31,7 @@ class Winco_Contact_Hooks extends Hookable
             ),
             'show_in_rest' => false,
         );
-        new Winco_Contact_Post_Type('contact', 'Liên hệ', false, $args);
+        new Wincos_Contact_Post_Type('contact', 'Liên hệ', false, $args);
     }
 
     function winco_contact_metabox()
@@ -136,4 +136,4 @@ class Winco_Contact_Hooks extends Hookable
     }
 }
 
-Winco_Contact_Hooks::instance();
+Wincos_Contact_Hooks::instance();

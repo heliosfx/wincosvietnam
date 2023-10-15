@@ -3,7 +3,7 @@
 /**
  * Custom nav walker class for desktop
  */
-class Winco_Menu_Walker extends Walker_Nav_Menu
+class Wincos_Menu_Walker extends Walker_Nav_Menu
 {
     public function start_el(&$output, $data_object, $depth = 0, $args = null, $current_object_id = 0)
     {
@@ -169,7 +169,7 @@ class Winco_Menu_Walker extends Walker_Nav_Menu
 }
 
 
-class Winco_Mobile_Menu_Walker extends Walker_Nav_Menu
+class Wincos_Mobile_Menu_Walker extends Walker_Nav_Menu
 {
     public function start_el(&$output, $data_object, $depth = 0, $args = null, $current_object_id = 0)
     {
