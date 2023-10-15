@@ -4,9 +4,9 @@ use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 // if (is_admin() && class_exists(YahnisElsts\PluginUpdateChecker\v5\PucFactory::class)) {
 //     $themeUpdater = PucFactory::buildUpdateChecker(
-//         'https://github.com/heliosfx/dolazo.net/',
+//         'https://github.com/heliosfx/wincovietnam/',
 //         __FILE__,
-//         'dolazo'
+//         'wincosvietnam'
 //     );
 //     //Set the branch that contains the stable release.
 //     $themeUpdater->setBranch('master');

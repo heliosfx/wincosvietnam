@@ -7,7 +7,7 @@ class Template_Core_Layouts extends Hookable
     {
         add_filter('use_base_app_script', '__return_false', 99); // remove base app scripts
         add_filter('use_base_app_css', '__return_false', 99); // remove base app css
-        $this->add_action('wp_head','custom_css',99);
+        $this->add_action('wp_head', 'custom_css', 99);
         $this->add_action('dolazo_header', 'header');
         //$this->add_action('dolazo_after_header', 'breadcrumb');
         $this->add_action('dolazo_footer', 'footer');
@@ -20,7 +20,7 @@ class Template_Core_Layouts extends Hookable
         $this->add_filter('nav_menu_submenu_css_class', 'submenu_class', 10, 3);
         $this->add_filter('dolazo_theme_registered_nav_menus', 'register_nav_menu', 10, 1);
         //$this->add_filter('dolazo_theme_registered_sidebars', 'register_sidebars', 10, 1);
-        $this->add_filter('rank_math/frontend/breadcrumb/html','breadcrumb_items_html',10,3);
+        $this->add_filter('rank_math/frontend/breadcrumb/html', 'breadcrumb_items_html', 10, 3);
     }
 
     function style()
@@ -107,16 +107,25 @@ class Template_Core_Layouts extends Hookable
         return $nav_menus;
     }
 
-    function breadcrumb_items_html( $html, $crumbs, $class ) {
+    function breadcrumb_items_html($html, $crumbs, $class)
+    {
         $items = [];
+        $blog_item = [
+            0 => "Blog",
+            1 => trailingslashit(home_url("blog")),
+        ];
+        if (is_singular('post') || is_category() || is_tag() || is_search()) {
+            $crumbs = array_merge(array_slice($crumbs, 0, 1), array($blog_item), array_slice($crumbs, 1));
+        }
         $items[] = "<ol>";
-        foreach($crumbs as $item) {
-            $items[] = sprintf("<li><a href='%s'><span>%s</span></a></li>",$item[1],$item[0]);
+        foreach ($crumbs as $item) {
+            $items[] = sprintf("<li><a href='%s'><span>%s</span></a></li>", $item[1], $item[0]);
         }
         $items[] = "</ol>";
-        return implode(" ",$items);
+        return implode(" ", $items);
     }
-    function custom_css() {
+    function custom_css()
+    {
         echo "<style>
         body.admin-bar {position: relative}
         body.admin-bar .header-body.fixed {top: 32px}
