@@ -4,7 +4,7 @@ use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 if (is_admin() && class_exists(YahnisElsts\PluginUpdateChecker\v5\PucFactory::class)) {
     $themeUpdater = PucFactory::buildUpdateChecker(
-        'https://github.com/heliosfx/wincovietnam/',
+        'https://github.com/heliosfx/wincosvietnam/',
         __FILE__,
         'wincosvietnam'
     );
