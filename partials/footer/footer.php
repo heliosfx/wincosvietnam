@@ -78,27 +78,6 @@
             </div>
         </form>
     </div>
-    <script>
-        function wincoContactForm() {
-            $form = jQuery('#js-contactmodal-form');
-            const data = $form.serialize();
-            jQuery.ajax({
-                url: $form.attr('action'),
-                method: 'post',
-                data: data,
-                dataType: 'json',
-                success: function(data) {
-                    $modal = jQuery('#success-modal');
-                    $modal.find('p.text-left').html(data.msg);
-                    Ecsgroup.popup(
-                        [{
-                            src: '#success-modal',
-                            type: "inline"
-                        }], {}, 'success');
-                }
-            });
-        }
-    </script>
 </div>
 <div class="modal modal-form modal-popup fancybox-fade fancybox-hide" id="product-contact-modal">
     <div class="modal-body">

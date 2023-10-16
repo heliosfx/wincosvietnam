@@ -1,4 +1,27 @@
 <script>
+    function wincoContactForm() {
+        $form = jQuery('#js-contactmodal-form');
+        const data = $form.serialize();
+        jQuery.ajax({
+            url: $form.attr('action'),
+            method: 'post',
+            data: data,
+            dataType: 'json',
+            beforeSend: function() {
+                jQuery('#loading').show();
+            },
+            success: function(data) {
+                jQuery('#loading').hide();
+                $modal = jQuery('#success-modal');
+                $modal.find('p.text-left').html(data.msg);
+                Ecsgroup.popup(
+                    [{
+                        src: '#success-modal',
+                        type: "inline"
+                    }], {}, 'success');
+            }
+        });
+    }
     document.addEventListener("DOMContentLoaded", function() {
         var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazyload-bg"));
         var lazyIframes = [].slice.call(document.querySelectorAll(".lazyload-iframe"));

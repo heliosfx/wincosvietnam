@@ -129,6 +129,7 @@ class Template_Core_Layouts extends Hookable
         echo "<style>
         body.admin-bar {position: relative}
         body.admin-bar .header-body.fixed {top: 32px}
+        #loading {z-index: 9999}
         </style>\n";
     }
 }
