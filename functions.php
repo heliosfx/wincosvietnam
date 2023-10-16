@@ -9,7 +9,7 @@ if (is_admin() && class_exists(YahnisElsts\PluginUpdateChecker\v5\PucFactory::cl
         'wincosvietnam'
     );
     $themeUpdater->setBranch('master');
-    $themeUpdater->setAuthentication('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');
+    //$themeUpdater->setAuthentication('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');
 }
 define('THEME_DEV_MODE', FALSE);
 define('THEME_VERSION', THEME_DEV_MODE ? time() : '1.0.1');
