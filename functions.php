@@ -19,6 +19,8 @@ define('THEME_ASSET_URL', trailingslashit(THEME_URL . 'assets/dist'));
 define("THEME_MODULE_DIR", THEME_DIR . 'modules/');
 define("THEME_MODULE_URL", trailingslashit(THEME_URL . 'modules'));
 define('THEME_LANG_DIR', THEME_DIR . 'languages/');
+define('THEME_TEXT_DOMAIN', 'wincosvietnam');
+
 define('TEMPLATE_CREDIT_TEXT', 'Gozone');
 define('TEMPLATE_CREDIT_URL', '#');
 

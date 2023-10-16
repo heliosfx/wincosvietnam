@@ -17,7 +17,7 @@ $tags = get_tags();
                 <div class="widget-body">
                     <form action="/" method="get">
                         <div class="form-wrapper d-flex">
-                            <input name="s" class="form-control" type="search" placeholder="<?php _e('Tìm kiếm...') ?>" value="<?php echo get_search_query() ?>" /><button class="btn btn-search demo-icon demo-icon cus-search"></button>
+                            <input name="s" class="form-control" type="search" placeholder="<?php echo __('Tìm kiếm...',THEME_TEXT_DOMAIN) ?>" value="<?php echo get_search_query() ?>" /><button class="btn btn-search demo-icon demo-icon cus-search"></button>
                         </div>
                     </form>
                 </div>
