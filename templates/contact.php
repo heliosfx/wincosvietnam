@@ -75,19 +75,4 @@ get_header();
         </div>
     </section>
 </main>
-<script>
-    function wincoContactForm() {
-        $form = jQuery('#js-contactmodal-form');
-        const data = $form.serialize();
-        jQuery.ajax({
-            url: $form.attr('action'),
-            method: 'post',
-            data: data,
-            dataType: 'json',
-            success: function(data) {
-                alert(data.msg);
-            }
-        });
-    }
-</script>
 <?php get_footer();

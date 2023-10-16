@@ -88,7 +88,13 @@
                 data: data,
                 dataType: 'json',
                 success: function(data) {
-                    alert(data.msg);
+                    $modal = jQuery('#success-modal');
+                    $modal.find('p.text-left').html(data.msg);
+                    Ecsgroup.popup(
+                        [{
+                            src: '#success-modal',
+                            type: "inline"
+                        }], {}, 'success');
                 }
             });
         }
@@ -132,7 +138,7 @@
             <button class="btn btn-link btn-close popup-close" aria-label="button"><i class="close-icon"></i></button>
             <div class="alert-title text-left"><i class="demo-icon cus-ok"></i>Thành công!!!</div>
             <p class="text-left">Cảm ơn bạn đã liên hệ với chúng tôi. Chúng tôi sẽ liên lạc với bạn trong thời gian sớm nhất.</p>
-            <a class="popup-close" href="javascript:">Đóng</a><span class="text-grey mr-1 ml-1">hoặc </span><a class="text-lowercase text-underline text-primary" href="/">Quay về trang chủ</a>
+            <a class="popup-close" href="javascript:">Đóng</a><span class="text-grey mr-1 ml-1">hoặc </span><a class="text-underline text-primary" href="/">Quay về trang chủ</a>
         </div>
     </div>
 </div>
