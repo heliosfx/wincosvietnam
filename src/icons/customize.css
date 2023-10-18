@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'customize';
-  src: url('/assets/dist/icons/customize.eot?47874607');
-  src: url('/assets/dist/icons/customize.eot?47874607#iefix') format('embedded-opentype'),
-       url('/assets/dist/icons/customize.woff2?47874607') format('woff2'),
-       url('/assets/dist/icons/customize.woff?47874607') format('woff'),
-       url('/assets/dist/icons/customize.ttf?47874607') format('truetype'),
-       url('/assets/dist/icons/customize.svg?47874607#customize') format('svg');
+  src: url('customize.eot?47874607');
+  src: url('customize.eot?47874607#iefix') format('embedded-opentype'),
+       url('customize.woff2?47874607') format('woff2'),
+       url('customize.woff?47874607') format('woff'),
+       url('customize.ttf?47874607') format('truetype'),
+       url('customize.svg?47874607#customize') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'customize';
-    src: url('/assets/dist/icons/customize.svg?47874607#customize') format('svg');
+    src: url('customize.svg?47874607#customize') format('svg');
   }
 }
 */

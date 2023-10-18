@@ -27,10 +27,12 @@ get_header();
                 </div>
                 <div class="mt-auto">
                     <div class="section-body mb-2">
-                        <div class="row">
+                        <div class="row gutter-lg">
                             <div class="col-6 col-lg-3 mb-3">
                                 <div class="item">
-                                    <div class="item-number">01.</div>
+                                    <div class="item-number">
+                                        <svg viewBox="0 0 110 60" vector-effect="non-scaling-stroke" aria-hidden="true" focusable="false"><text x="0" y="58">01.</text></svg>
+                                    </div>
                                     <div class="item-details mt-3">
                                         <h3 class="item-title mb-3 text-primary">Tiện nghi</h3>
                                         <div class="item-content text-justify text-white">
@@ -41,42 +43,39 @@ get_header();
                             </div>
                             <div class="col-6 col-lg-3 mb-3">
                                 <div class="item">
-                                    <div class="item-number">02.</div>
+                                    <div class="item-number">
+                                        <svg viewBox="0 0 110 60" vector-effect="non-scaling-stroke" aria-hidden="true" focusable="false"><text x="0" y="58">02.</text></svg>
+                                    </div>
                                     <div class="item-details mt-3">
                                         <h3 class="item-title mb-3 text-primary">An toàn</h3>
                                         <div class="item-content text-justify text-white">
-                                            <p>
-                                                Chuẩn bị chu đáo cho chính sự an toàn của bạn. Phim Wincos có tác dụng chống vỡ, hạn chế văng mảnh thủy tinh do các tác động như tai nạn, bảo vệ sự an toàn của người lái xe
-                                                và hành khách.
-                                            </p>
+                                            <p>Chuẩn bị chu đáo cho chính sự an toàn của bạn. Phim Wincos có tác dụng chống vỡ, hạn chế văng mảnh thủy tinh do các tác động như tai nạn, bảo vệ sự an toàn của người lái xe và hành khách.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-6 col-lg-3 mb-3">
                                 <div class="item">
-                                    <div class="item-number">03.</div>
+                                    <div class="item-number">
+                                        <svg viewBox="0 0 110 60" vector-effect="non-scaling-stroke" aria-hidden="true" focusable="false"><text x="0" y="58">03.</text></svg>
+                                    </div>
                                     <div class="item-details mt-3">
                                         <h3 class="item-title mb-3 text-primary">Thông suốt</h3>
                                         <div class="item-content text-justify text-white">
-                                            <p>
-                                                Không chặn sóng vô tuyến của các thiết bị điện tử khác nhau như hệ thống định vị ô tô, ETC và điện thoại thông minh. Một chất keo dính đặc biệt được sử dụng để đảm bảo tầm
-                                                nhìn trong suốt như kính của bạn dù có một lớp phim bảo vệ.
-                                            </p>
+                                            <p>Không chặn sóng vô tuyến của các thiết bị điện tử khác nhau như hệ thống định vị ô tô, ETC và điện thoại thông minh. Một chất keo dính đặc biệt được sử dụng để đảm bảo tầm nhìn trong suốt như kính của bạn dù có một lớp phim bảo vệ.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-6 col-lg-3 mb-3">
                                 <div class="item">
-                                    <div class="item-number">04.</div>
+                                    <div class="item-number">
+                                        <svg viewBox="0 0 110 60" vector-effect="non-scaling-stroke" aria-hidden="true" focusable="false"><text x="0" y="58">04.</text></svg>
+                                    </div>
                                     <div class="item-details mt-3">
                                         <h3 class="item-title mb-3 text-primary">Công nghệ</h3>
                                         <div class="item-content text-justify text-white">
-                                            <p>
-                                                Phim nhuộm dung dịch của Wincos đa chức năng và có khả năng chống đổi màu và chống phai màu. Phim dán Wincos đáp ứng các nhu cầu khác nhau với nhiều loại sản phẩm và khả
-                                                năng phát triển tuyệt vời.
-                                            </p>
+                                            <p>Phim nhuộm dung dịch của Wincos đa chức năng và có khả năng chống đổi màu và chống phai màu. Phim dán Wincos đáp ứng các nhu cầu khác nhau với nhiều loại sản phẩm và khả năng phát triển tuyệt vời.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -93,23 +92,17 @@ get_header();
                 <div class="section-header">
                     <h2 class="section-title text-white w-100 font-weight-bold mb-5 mb-md-10">Sản phẩm</h2>
                     <div class="section-des des-title font-weight-semibold h3 text-primary mb-5" style="letter-spacing: 1.829px">
-                        <p>
-                            Phim dán hiệu suất cao<br />
-                            thay đổi cách bạn lái xe
-                        </p>
+                        <p>Phim dán hiệu suất cao<br /> thay đổi cách bạn lái xe</p>
                     </div>
                 </div>
                 <div class="section-body mt-2">
                     <div class="section-content mb-5 mb-md-10 des-title text-justify">
                         <p>Chất lượng và chức năng.</p>
                         <p>Với sự đa dạng về màu sắc và họa tiết, phim dán Wincos tạo nên một không gian nội thất cộng hưởng với các giác quan của người lái.</p>
-                        <p>
-                            Với hiệu suất che chắn nhiệt được hỗ trợ bởi công nghệ tiên tiến và phân khúc đa dạng, phim dán Wincos đáp ứng nhận thức ngày càng tăng về bảo tồn năng lượng và hệ sinh thái trong
-                            những năm gần đây, thông qua việc giảm tiêu thụ năng lượng và góp phần giảm tác động đến môi trường.
-                        </p>
+                        <p>Với hiệu suất che chắn nhiệt được hỗ trợ bởi công nghệ tiên tiến và phân khúc đa dạng, phim dán Wincos đáp ứng nhận thức ngày càng tăng về bảo tồn năng lượng và hệ sinh thái trong những năm gần đây, thông qua việc giảm tiêu thụ năng lượng và góp phần giảm tác động đến môi trường.</p>
                         <p>Luôn đứng đầu về cả vẻ đẹp và chức năng. Tinh tế.</p>
                     </div>
-                    <div class="section-btn"><a class="btn btn-primary text-normal btn-ellipse">Đăng ký tư vấn</a></div>
+                    <div class="section-btn"><a class="btn btn-primary text-normal btn-ellipse" href="#contact-modal" title="Đăng ký tư vấn" data-modal>Đăng ký tư vấn</a></div>
                 </div>
             </div>
         </div>
@@ -117,10 +110,10 @@ get_header();
     <section class="automotive-section3 pb-10" style="background: linear-gradient(180deg, #000 0%, rgba(32, 32, 32, 0.95) 48.39%, rgba(47, 47, 47, 0.85) 77.08%, rgba(98, 98, 98, 0.85) 100%)">
         <div class="container">
             <div class="section-body pb-10">
-                <div class="row">
+                <div class="row gutter-lg">
                     <div class="col-6 col-md-4 mt-md-10 mt-5">
                         <div class="automotive-item h-100">
-                            <figure class="automotive-icon"><img src="<?php echo THEME_ASSET_URL ?>images/automotive/automotive-icon1.png" alt="" width="80" height="80" loading="lazy" /></figure>
+                            <figure class="automotive-icon"><img src="<?php echo THEME_ASSET_URL ?>images/automotive/automotive-icon1.png" alt="Hiệu suất cách nhiệt vượt trội" width="80" height="80" loading="lazy" /></figure>
                             <div class="automotive-details">
                                 <h3 class="automotive-title text-primary mt-3 mb-2 h4">Hiệu suất cách nhiệt vượt trội</h3>
                                 <div class="automotive-content text-justify">
@@ -131,7 +124,7 @@ get_header();
                     </div>
                     <div class="col-6 col-md-4 mt-md-10 mt-5">
                         <div class="automotive-item h-100">
-                            <figure class="automotive-icon"><img src="<?php echo THEME_ASSET_URL ?>images/automotive/automotive-icon2.png" alt="" width="80" height="80" loading="lazy" /></figure>
+                            <figure class="automotive-icon"><img src="<?php echo THEME_ASSET_URL ?>images/automotive/automotive-icon2.png" alt="Cắt hơn 99% tia UV có hại" width="80" height="80" loading="lazy" /></figure>
                             <div class="automotive-details">
                                 <h3 class="automotive-title text-primary mt-3 mb-2 h4">Cắt hơn 99% tia UV có hại</h3>
                                 <div class="automotive-content text-justify">
@@ -142,7 +135,7 @@ get_header();
                     </div>
                     <div class="col-6 col-md-4 mt-md-10 mt-5">
                         <div class="automotive-item h-100">
-                            <figure class="automotive-icon"><img src="<?php echo THEME_ASSET_URL ?>images/automotive/automotive-icon3.png" alt="" width="80" height="80" loading="lazy" /></figure>
+                            <figure class="automotive-icon"><img src="<?php echo THEME_ASSET_URL ?>images/automotive/automotive-icon3.png" alt="Lớp phủ cứng chống trầy xước" width="80" height="80" loading="lazy" /></figure>
                             <div class="automotive-details">
                                 <h3 class="automotive-title text-primary mt-3 mb-2 h4">Lớp phủ cứng chống trầy xước</h3>
                                 <div class="automotive-content text-justify">
@@ -153,21 +146,18 @@ get_header();
                     </div>
                     <div class="col-6 col-md-4 mt-md-10 mt-5">
                         <div class="automotive-item h-100">
-                            <figure class="automotive-icon"><img src="<?php echo THEME_ASSET_URL ?>images/automotive/automotive-icon4.png" alt="" width="80" height="80" loading="lazy" /></figure>
+                            <figure class="automotive-icon"><img src="<?php echo THEME_ASSET_URL ?>images/automotive/automotive-icon4.png" alt="Chống vỡ và phân tán mảnh vỡ" width="80" height="80" loading="lazy" /></figure>
                             <div class="automotive-details">
                                 <h3 class="automotive-title text-primary mt-3 mb-2 h4">Chống vỡ và phân tán mảnh vỡ</h3>
                                 <div class="automotive-content text-justify">
-                                    <p>
-                                        Nó làm giảm sự phân tán của các mảnh thủy tinh do các tác động như tai nạn và bảo vệ sự an toàn của người lái xe và hành khách. Đáp ứng hiệu quả chống vỡ kính của JIS S
-                                        3107:2013 (thử nghiệm bóng rơi).
-                                    </p>
+                                    <p>Nó làm giảm sự phân tán của các mảnh thủy tinh do các tác động như tai nạn và bảo vệ sự an toàn của người lái xe và hành khách. Đáp ứng hiệu quả chống vỡ kính của JIS S 3107:2013 (thử nghiệm bóng rơi).</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 col-md-4 mt-md-10 mt-5">
                         <div class="automotive-item h-100">
-                            <figure class="automotive-icon"><img src="<?php echo THEME_ASSET_URL ?>images/automotive/automotive-icon5.png" alt="" width="80" height="80" loading="lazy" /></figure>
+                            <figure class="automotive-icon"><img src="<?php echo THEME_ASSET_URL ?>images/automotive/automotive-icon5.png" alt="Bảo vệ riêng tư trong xe" width="80" height="80" loading="lazy" /></figure>
                             <div class="automotive-details">
                                 <h3 class="automotive-title text-primary mt-3 mb-2 h4">Bảo vệ riêng tư trong xe</h3>
                                 <div class="automotive-content text-justify">
@@ -178,7 +168,7 @@ get_header();
                     </div>
                     <div class="col-6 col-md-4 mt-md-10 mt-5">
                         <div class="automotive-item h-100">
-                            <figure class="automotive-icon"><img src="<?php echo THEME_ASSET_URL ?>images/automotive/automotive-icon6.png" alt="" width="80" height="80" loading="lazy" /></figure>
+                            <figure class="automotive-icon"><img src="<?php echo THEME_ASSET_URL ?>images/automotive/automotive-icon6.png" alt="Đề kháng thời tiết tuyệt vời" width="80" height="80" loading="lazy" /></figure>
                             <div class="automotive-details">
                                 <h3 class="automotive-title text-primary mt-3 mb-2 h4">Đề kháng thời tiết tuyệt vời</h3>
                                 <div class="automotive-content text-justify">
@@ -189,14 +179,11 @@ get_header();
                     </div>
                     <div class="col-6 col-md-4 mt-md-10 mt-5">
                         <div class="automotive-item h-100">
-                            <figure class="automotive-icon"><img src="<?php echo THEME_ASSET_URL ?>images/automotive/automotive-icon7.png" alt="" width="80" height="80" loading="lazy" /></figure>
+                            <figure class="automotive-icon"><img src="<?php echo THEME_ASSET_URL ?>images/automotive/automotive-icon7.png" alt="Khả năng co nhiệt ổn định" width="80" height="80" loading="lazy" /></figure>
                             <div class="automotive-details">
                                 <h3 class="automotive-title text-primary mt-3 mb-2 h4">Khả năng co nhiệt ổn định</h3>
                                 <div class="automotive-content text-justify">
-                                    <p>
-                                        Vì màng PET không bị hư hại do nhiệt trong quá trình nhuộm (xử lý thứ cấp), nên màng nhuộm gốc có khả năng co nhiệt ổn định và định dạng một lớp (single- layer formability)
-                                        tuyệt vời. Ngay cả sau khi lắp đặt, ít có sự thay đổi sắc độ màu và độ hoàn thiện tốt.
-                                    </p>
+                                    <p>Vì màng PET không bị hư hại do nhiệt trong quá trình nhuộm (xử lý thứ cấp), nên màng nhuộm gốc có khả năng co nhiệt ổn định và định dạng một lớp (single- layer formability) tuyệt vời. Ngay cả sau khi lắp đặt, ít có sự thay đổi sắc độ màu và độ hoàn thiện tốt.</p>
                                 </div>
                             </div>
                         </div>
@@ -208,13 +195,13 @@ get_header();
                     <div class="section-title text-white">Dòng sản phẩm Phim dán kính Ô tô</div>
                     <div class="section-subtitle text-white">Phim dán cao cấp Wincos</div>
                 </div>
-                <div class="section-header-col"><a class="btn btn-primary text-normal btn-ellipse">Đăng ký tư vấn</a></div>
+                <div class="section-header-col"><a class="btn btn-primary text-normal btn-ellipse" href="#contact-modal" title="Đăng ký tư vấn" data-modal>Đăng ký tư vấn</a></div>
             </div>
-            <div class="section-footer row">
+            <div class="section-footer row gutter-lg">
                 <div class="col-md-4 mb-5">
                     <div class="automotive-item1 text-white">
                         <figure class="automotive-media p-relative">
-                            <img src="<?php echo THEME_ASSET_URL ?>images/automotive/automotive-product1.jpg" width="" height="" loading="lazy" />
+                            <img src="<?php echo THEME_ASSET_URL ?>images/automotive/automotive-product1.jpg" alt="Siêu cấp" width="370" height="475" loading="lazy" />
                             <div class="automotive-details p-absolute">
                                 <h3 class="automotive-title text-white">Siêu cấp</h3>
                                 <div class="automotive-meta mt-auto">
@@ -225,17 +212,14 @@ get_header();
                             </div>
                         </figure>
                         <div class="automotive-content text-white mt-3">
-                            <p>
-                                Kỹ thuật và công nghệ tiên tiến được trau dồi trên khắp thế giới, đây là phim cách nhiệt dành cho ô tô kết hợp CHẤT LƯỢNG CAO NHẤT trên thế giới, khả năng chắn nhiệt tuyệt vời (với
-                                tỷ lệ cắt tia hồng ngoại từ 94% trở lên, cắt tia UV hoàn toàn 99%) và nhiều chức năng khác.
-                            </p>
+                            <p>Kỹ thuật và công nghệ tiên tiến được trau dồi trên khắp thế giới, đây là phim cách nhiệt dành cho ô tô kết hợp CHẤT LƯỢNG CAO NHẤT trên thế giới, khả năng chắn nhiệt tuyệt vời (với tỷ lệ cắt tia hồng ngoại từ 94% trở lên, cắt tia UV hoàn toàn 99%) và nhiều chức năng khác.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-5">
                     <div class="automotive-item1 text-white">
                         <figure class="automotive-media p-relative">
-                            <img src="<?php echo THEME_ASSET_URL ?>images/automotive/automotive-product2.jpg" width="" height="" loading="lazy" />
+                            <img src="<?php echo THEME_ASSET_URL ?>images/automotive/automotive-product2.jpg" alt="Tiêu chuẩn" width="370" height="475" loading="lazy" />
                             <div class="automotive-details p-absolute">
                                 <h3 class="automotive-title text-white">Tiêu chuẩn</h3>
                                 <div class="automotive-meta mt-auto">
@@ -259,7 +243,7 @@ get_header();
             <div class="section-body text-white">
                 <div class="item d-flex align-items-center flex-wrap">
                     <div class="item-title">Câu hỏi thường gặp</div>
-                    <a class="btn btn-white btn-outline text-normal btn-ellipse">Q&A</a>
+                    <a class="btn btn-white btn-outline text-normal btn-ellipse" href="<?=home_url('faq') ?>/" title="Q&A">Q&A</a>
                 </div>
                 <div class="item d-flex align-items-center flex-wrap">
                     <div class="item-title">Thông số kỹ thuật</div>
