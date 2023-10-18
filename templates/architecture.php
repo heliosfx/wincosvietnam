@@ -33,11 +33,13 @@ get_header();
             </div>
             <div class="mt-auto">
                 <div class="section-body mb-2">
-                    <div class="row">
+                    <div class="row gutter-lg">
                         <div class="col-6 col-lg-3 mb-3">
                             <div class="item">
-                                <div class="item-number">01.</div>
-                                <div class="item-details mt-3">
+                                <div class="item-number">
+                                    <svg viewBox="0 0 110 60" vector-effect="non-scaling-stroke" aria-hidden="true" focusable="false"><text x="0" y="58">01.</text></svg>
+                                </div>
+                                <div class="item-details">
                                     <h3 class="item-title mb-3 font-weight-normal text-primary">Chất lượng</h3>
                                     <div class="item-content text-justify">
                                         <p>
@@ -50,8 +52,10 @@ get_header();
                         </div>
                         <div class="col-6 col-lg-3 mb-3">
                             <div class="item">
-                                <div class="item-number">02.</div>
-                                <div class="item-details mt-3">
+                                <div class="item-number">
+                                    <svg viewBox="0 0 110 60" vector-effect="non-scaling-stroke" aria-hidden="true" focusable="false"><text x="0" y="58">02.</text></svg>
+                                </div>
+                                <div class="item-details">
                                     <h3 class="item-title mb-3 font-weight-normal text-primary">Tuỳ chỉnh</h3>
                                     <div class="item-content text-justify">
                                         <p>
@@ -64,8 +68,10 @@ get_header();
                         </div>
                         <div class="col-6 col-lg-3 mb-3">
                             <div class="item">
-                                <div class="item-number">03.</div>
-                                <div class="item-details mt-3">
+                                <div class="item-number">
+                                    <svg viewBox="0 0 110 60" vector-effect="non-scaling-stroke" aria-hidden="true" focusable="false"><text x="0" y="58">03.</text></svg>
+                                </div>
+                                <div class="item-details">
                                     <h3 class="item-title mb-3 font-weight-normal text-primary">Thiết kế</h3>
                                     <div class="item-content text-justify">
                                         <p>
@@ -78,8 +84,10 @@ get_header();
                         </div>
                         <div class="col-6 col-lg-3 mb-3">
                             <div class="item">
-                                <div class="item-number">04.</div>
-                                <div class="item-details mt-3">
+                                <div class="item-number">
+                                    <svg viewBox="0 0 110 60" vector-effect="non-scaling-stroke" aria-hidden="true" focusable="false"><text x="0" y="58">04.</text></svg>
+                                </div>
+                                <div class="item-details">
                                     <h3 class="item-title mb-3 font-weight-normal text-primary">Công nghệ</h3>
                                     <div class="item-content text-justify">
                                         <p>

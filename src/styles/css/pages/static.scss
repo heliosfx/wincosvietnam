@@ -1,0 +1,1121 @@
+/* 1. Config */
+@import '../config/variables';
+
+/* 2. Mixins */
+@import '../mixins/breakpoint';
+@import '../mixins/core';
+@import '../mixins/buttons';
+@import '../mixins/mixins';
+
+
+/*#region components,elements*/
+  @import '../components/icon-box';
+/*#endregion*/
+
+/*#region .item-*/
+/*#endregion*/
+#static-page {
+  #static {
+    .section-body {
+      padding: 3rem 1.5rem;
+    }
+    @include mq(md, 'max') {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+.error-page {
+  .error {
+    height: calc(100svh - 383px);
+    padding: 20vh 0;
+    background-position: bottom center;
+    background-repeat: repeat-x;
+  
+    p {
+        margin-bottom: 0rem;
+  
+        a {
+            color: rgb(37, 99, 235);
+  
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+  
+    .section-title {
+        color: rgb(239, 68, 68);
+        font-weight: $font-weight-bold;
+        margin-bottom: 0;
+        margin-right: 3rem;
+        font-size: 15rem;
+        letter-spacing: -10px;
+        line-height: .8;
+    }
+  
+    .title {
+        color: #fdba13;
+        margin-bottom: 1rem;
+        font-weight: $font-weight-semibold;
+    }
+  
+    form {
+        position: relative;
+  
+        button {
+            @include border-radius($val: 0 .5rem .5rem 0);
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            font-size: 16px;
+            padding: 0;
+            width: 60px;
+        }
+    }
+    @include mq(lg, 'max') {
+      padding: 10vh 0;
+
+      .section-title {
+          font-size: 10rem;
+          letter-spacing: -5px;
+      }
+    }
+    @include mq(md, 'max') {
+      .section-title {
+          margin-right: 0;
+          margin-bottom: 2rem;
+      }
+
+      .section-header {
+          -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          text-align: center;
+      }
+    }
+  }
+}
+
+#architecture-page {
+  --fontSize: clamp(4rem,6vw,8rem);
+  background-color: #fff;
+  --borderRadius: 40rem;
+  section {
+    background-repeat: no-repeat;
+    @include mq(xl) {
+      min-height: 100svh;
+    }
+  }
+  .architecture-item {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #000;
+    @include mq(md, 'max') {
+      .architecture-title {
+        font-size: 1.6rem;
+        line-height: 1.3;
+      }
+    }
+  }
+  .architecture1-item {
+    @include mq(md, 'max') {
+      .architecture1-title {
+        font-size: 1.6rem;
+        line-height: 1.3;
+      }
+    }
+  }
+  .architecture-section1 {
+    --paddingTop: 20vh;
+    --paddingBot: 10vh;
+    background-position: center center;
+    background-size: cover;
+    padding-top: var(--paddingTop);
+    padding-bottom: var(--paddingBot);
+    margin-bottom: calc(var(--borderRadius)*-1);
+    > .container {
+      margin-bottom: var(--borderRadius);
+    }
+    .section {
+      &-title {
+        font-size: var(--fontSize);
+        line-height: 115%;
+      }
+    }
+    @include mq(xl, 'max') {
+      --paddingTop: 15vh;
+      --paddingBot: 10vh;
+    }
+    @include mq(lg, 'max') {
+      --paddingTop: 10vh;
+      --paddingBot: 10vh;
+    }
+  }
+
+  .architecture-section2 {
+    --paddingTop: 20vh;
+    --marginRight: 10rem;
+    --fontSize: clamp(3rem,5vw,4rem);
+    background-position: center center;
+    background-size: cover;
+    border-top-right-radius: var(--borderRadius);
+    .section {
+      &-header {
+        width: 530px;
+        max-width: 100%;
+        margin-left: auto;
+        padding-top: var(--paddingTop);
+        padding-bottom: var(--paddingTop);
+        margin-right: var(--marginRight);
+      }
+      &-title {
+          font-size: var(--fontSize);
+          line-height: 1.1;
+          color: $body-color;
+      }
+      &-des {
+        P:not(:last-child) {
+          margin-bottom: .5rem;
+        }
+      }
+      &-footer {
+        a {
+          margin-bottom: 1rem;
+          &:not(:last-child) {
+            margin-right: 3rem;
+          }
+        }
+      }
+    }
+    .item {
+      &-number {
+        svg {
+          font-size: 7.5rem;
+          width: 100px;
+          height: 70px;
+          font-weight: $font-weight-bold;
+          line-height: normal;
+          font-family: HelveticaNowText-Bold, sans-serif;
+        }
+        text {
+          stroke-width: 1.5px;
+          fill: none;
+          stroke: rgba(89,88,84,.8);
+        }
+      }
+      &-title {
+      }
+    }
+    @include mq(xl, 'max') {
+      --paddingTop: 10vh;
+      .section-header {
+        width: 100%;
+      }
+    }
+    @include mq(lg, 'max') {
+      --paddingTop: 5vh;
+    }
+    @include mq(md, 'max') {
+      .container {
+        display: block !important;
+      }
+      .section-footer {
+        a {
+          margin-right: 0 !important;
+        }
+      }
+    }
+  }
+
+  .architecture-section3 {
+    --fontSize: clamp(3rem,5vw,6rem);
+    --paddingTop: 10vh;
+    --paddingBot: 15vh;
+    background-repeat:no-repeat !important;
+    padding-top: var(--paddingTop);
+    .section {
+      &-header {
+        padding-bottom: var(--paddingBot);
+      }
+      &-title {
+        font-size: var(--fontSize);
+        line-height: 1.1;
+        color: $body-color;
+      }
+    }
+    @include mq(xl, 'max') {
+      --paddingTop: 5vh;
+      --paddingBot: 5vh;
+    }
+    @include mq(md, 'max') {
+      --paddingTop: 3rem;
+      --paddingBot: 3rem;
+    }
+  }
+
+  .architecture-section4 {
+    --fontSize: clamp(3rem,5vw,6rem);
+    --paddingTop: 20vh;
+    --paddingBot: 15vh;
+    .section {
+      &-wrapper {
+        padding-top: var(--paddingTop);
+        border-top-left-radius: 15vw;
+        background-repeat:no-repeat !important;
+      }
+      &-header {
+        width: 600px;
+        max-width: 100%;
+        padding-bottom: var(--paddingBot);
+      }
+      &-title {
+        font-size: var(--fontSize);
+        line-height: 1.1;
+        color: $body-color;
+      }
+    }
+    @include mq("1920px") {
+      .section
+        &-wrapper {
+          border-top-left-radius:  30vw;
+        }
+    }
+    @include mq(xl, 'max') {
+      --paddingTop: 5vh;
+      --paddingBot: 5vh;
+      .section {
+        &-wrapper {
+          border-top-left-radius: 10vw;
+        }
+      }
+    }
+    @include mq(md, 'max') {
+      --paddingTop: 3rem;
+      --paddingBot: 3rem;
+    }
+  }
+
+  .architecture-section5 {
+    --fontSize: clamp(3rem,5vw,6rem);
+    --paddingTop: 20vh;
+    --paddingBot: 15vh;
+    .section {
+      &-wrapper {
+        padding-top: var(--paddingTop);
+        border-top-right-radius: 15vw;
+        background-repeat:no-repeat !important;
+      }
+      &-header {
+        width: 600px;
+        max-width: 100%;
+        padding-bottom: var(--paddingBot);
+      }
+      &-title {
+        font-size: var(--fontSize);
+        line-height: 1.1;
+        color: $body-color;
+      }
+    }
+    @include mq("1920px") {
+      .section
+        &-wrapper {
+          border-top-right-radius:  30vw;
+        }
+    }
+    @include mq(xl, 'max') {
+      --paddingTop: 5vh;
+      --paddingBot: 5vh;
+      .section {
+        &-wrapper {
+          border-top-right-radius: 10vw;
+        }
+      }
+    }
+    @include mq(md, 'max') {
+      --paddingTop: 3rem;
+      --paddingBot: 3rem;
+    }
+  }
+
+  .architecture-section6 {
+    min-height: auto;
+    .btn {
+      padding: 8px 12px;
+      min-width: 180px;
+      margin-left: 5rem;
+    }
+    @include mq(md, 'max') {
+      .section-header {
+        justify-content: center;
+      }
+      .btn {
+        margin-left: 0;
+        margin-top: 1rem;
+      }
+    }
+  }
+  
+}
+
+#adn-page {
+  --fontSize: clamp(4rem,6vw,8rem);
+  section {
+    background-repeat: no-repeat;
+    @include mq(xl) {
+      min-height: 100svh;
+    }
+  }
+
+  .adn-section1 {
+    --paddingTop: 20vh;
+    --paddingBot: 10vh;
+    background-position: center center;
+    background-size: cover;
+    padding-top: var(--paddingTop);
+    padding-bottom: var(--paddingBot);
+    .section {
+      &-title {
+        font-size: var(--fontSize);
+        line-height: 115%;
+      }
+    }
+    @include mq(xl, 'max') {
+      --paddingTop: 15vh;
+      --paddingBot: 10vh;
+    }
+    @include mq(lg, 'max') {
+      --paddingTop: 10vh;
+      --paddingBot: 10vh;
+    }
+  }
+
+  .adn-section2 {
+    --fontSize: clamp(4rem,5vw,6rem);
+    .section {
+      &-title {
+        font-size: var(--fontSize);
+        line-height: 1.1;
+        white-space: nowrap;
+      }
+      &-details {
+        width: 450px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      &-content {
+        line-height: 32px;
+        p:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    @include mq(lg, 'max') {
+      .section {
+        &-content {
+          line-height: 1.6;
+        }
+      }
+    }
+    @include mq(md, 'max') {
+      position: relative;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      .section {
+        &-title {
+          white-space: normal;
+        }
+        &-media {
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
+  
+  .adn-section2a {
+    --fontSize: clamp(3.5rem,5vw,6rem);
+    .section {
+      &-title {
+        font-size: var(--fontSize);
+        line-height: 1.1;
+        white-space: nowrap;
+      }
+      &-details {
+        @include e-cen($type: "top");
+        position: absolute;
+        width: 450px;
+        max-width: 100%;
+        z-index: 2;
+      }
+      &-content {
+        line-height: 32px;
+        p:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    @include mq(xl, 'max') {
+      .section {
+        &-details {
+          width: 400px;
+        }
+        &-content {
+          line-height: 1.6;
+        }
+      }
+    }
+    @include mq(lg, 'max') {
+      .section {
+        &-details {
+          width: 300px;
+        }
+        &-content {
+          line-height: 1.4;
+          font-size: 1.4rem;
+        }
+      }
+    }
+    @include mq(md, 'max') {
+      position: relative;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      .section {
+        &-details {
+          position: relative !important;
+          transform: inherit;
+          width: 100%;
+        }
+        &-title {
+          white-space: normal;
+          line-height: 1.3;
+        }
+        &-media {
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
+  
+  .adn-section3 {
+    --fontSize: clamp(3rem,5vw,4rem);
+    .section {
+      &-title {
+        font-size: var(--fontSize);
+        line-height: 1.1;
+      }
+      &-details {
+        width: 450px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      &-content {
+        p:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+      &-btn {
+        a {
+          margin-bottom: 1rem;
+          &:not(:last-child) {
+            margin-right: 1.5rem;
+          }
+        }
+      }
+      &-item {
+        &:nth-child(odd) {
+          .section-media {
+            padding-right: 0;
+          }
+          .section-details {
+            padding-left: 3rem;
+          }
+        }
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+          .section-media {
+            padding-left: 0;
+          }
+          .section-details {
+            padding-right: 3rem;
+          }
+        }
+      }
+    }
+    @include mq(xl, 'max') {
+      .section {
+        &-media {
+          position: relative;
+          @include center-img($hover: false);
+          height: auto;
+        } 
+        &-details {
+          padding-top: 5rem;
+          padding-bottom: 5rem;
+        }
+      }
+    }
+    @include mq(lg, 'max') {
+    }
+    @include mq(md, 'max') {
+      .section {
+        &-item {
+          margin-left: -15px;
+          margin-right: -15px;
+        }
+        &-details {
+          padding: 2rem 5px 4rem 5px !important;
+        }
+        &-media {
+          width: 100%;
+          height: 200px;
+        }
+      }
+    }
+  }
+
+  .index-section2 {
+    border-top-right-radius: 30vw ;
+    overflow: hidden;
+  }
+}
+
+#contact-page {
+  #contact {
+    .icon-box-content {
+      .icon-box-title {
+        font-size: 1.8rem;
+        line-height: 1.3;
+        margin-bottom: .5rem;
+        text-transform: none;
+      }
+  
+      p {
+        font-size: 1.4rem;
+        color: $grey-color;
+      }
+  
+      a {
+        position: relative;
+        color: $grey-color;
+  
+        &:not(:last-child)::after {
+          content: '/';
+          padding: 0 5px;
+        }
+      }
+    }
+  
+    .icon-box {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      .icon-email {
+        margin: .3rem 0 1.5rem;
+      }
+  
+      .icon-headphone {
+        margin-bottom: 2.3rem;
+      }
+  
+      .icon-map-marker {
+        margin-bottom: 1.9rem;
+      }
+  
+      .icon-fax {
+        margin: 0.4rem 0 2.2rem;
+      }
+  
+      .ecs-icon-envelop-closed {
+        font-size: 5.2rem;
+      }
+  
+      .ecs-icon-headphone {
+        font-size: 4.8rem;
+      }
+  
+      .ecs-icon-map-marker {
+        font-size: 5.1rem;
+      }
+  
+      .ecs-icon-fax {
+        font-size: 4.5rem;
+      }
+    }
+  
+    .map iframe {
+      width: 100%;
+      height: 300px;
+    }
+  }
+  form {
+    .form-group {
+      width: 100%;
+  
+      label {
+        color: $dark-color;
+        line-height: 2;
+      }
+  
+      .form-control {
+        @include border-radius($val: .3rem);
+        margin-bottom: 1.4rem;
+        min-height: 4.6rem;
+        background-color: #fff;
+        *:last-child {
+          margin-bottom: 0;
+        }
+      }
+  
+      textarea.form-control {
+        margin-bottom: 2.1rem;
+        height: 150px;
+        resize: none;
+      }
+  
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        width: calc((100% - 41px) / 3);
+        margin-right: 20px;
+      }
+  
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+  
+      &:last-child {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+  }
+  @include mq(xl, "max") {
+    .icon-box-content a {
+      display: block;
+  
+      &::after {
+        display: none;
+      }
+    }
+  }
+  
+  @include mq(md, "max") {
+    .contact-us-form {
+      .form-group {
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+#qa-page {
+  .qa-section1 {
+    .section {
+      &-title {
+        font-size: 2rem;
+        border-color: transparentize($color: #595854, $amount: .8) !important;
+        padding: 9.5px 0;
+      }
+    }
+    .accordion {
+      &-item {
+        background-color: #fff;
+        margin-bottom: 1.5rem;
+      }
+      &-header {
+        margin-bottom: 0;
+        a {
+          color: #595854;
+        }
+        a.collapse {
+          color: $primary-color;
+        }
+      }
+      &-body {
+      }
+    }
+  }
+}
+
+#automotive-page {
+  --fontSize: clamp(4rem,6vw,8rem);
+  section {
+    min-height: 100svh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .automotive-item {
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    .automotive-content {
+      color: #F1F3F4;
+    }
+    @include mq(md, 'max') {
+      .automotive-title {
+        font-size: 1.6rem;
+        line-height: 1.3;
+      }
+    }
+  }
+  .automotive-item1 {
+    --fontSize: clamp(4rem,3.5vw,4.5rem);
+    --fontSize1: clamp(1.8rem,2vw,2.2rem);
+    .automotive-details {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 3rem 2rem 2rem 2rem;
+    }
+    .automotive-title {
+      font-size: 4.5rem;
+    }
+    .meta1 {
+      font-size: 2.2rem;
+    }
+    .number {    
+      font-size: 6rem;
+      line-height: .8;
+      span {
+        font-size: 50%;
+      }
+    }
+    @include mq(xl, 'max') {
+      .automotive-title {
+        font-size: 4rem;
+      }
+      .meta1 {
+        font-size: 2rem;
+      }
+    }
+    @include mq(lg, 'max') {
+      .automotive-details {
+        padding: 2rem 1.5rem 1.5rem 1.5rem;
+      }
+      .automotive-title {
+        font-size: 3rem;
+      }
+      .meta1 {
+        font-size: 1.8rem;
+      }
+    }
+    @include mq(md, 'max') {
+      .automotive-details {
+        padding: 3rem 2rem 2rem;
+      }
+      .automotive-title {
+        font-size: 4.5rem;
+      }
+      .meta1 {
+        font-size: 2.2rem;
+      }
+    }
+  }
+  
+  .automotive-section1 {
+    --paddingTop: 25vh;
+    --paddingBot: 25vh;
+    --fontSize: clamp(3rem,5vw,4rem);
+    background-position: top center !important;
+    .section {
+      &-header {
+        width: 600px;
+        max-width: 100%;
+        margin-left: auto;
+        padding-top: var(--paddingTop);
+        padding-bottom: var(--paddingBot);
+      }
+      &-title {
+          font-size: var(--fontSize);
+          line-height: 1.1;
+          color: $body-color;
+      }
+      &-des {
+        line-height: 2;
+        font-size: 1.6rem;
+        P:not(:last-child) {
+          margin-bottom: .5rem;
+        }
+      }
+      &-footer {
+        a {
+          margin-bottom: 1rem;
+          &:not(:last-child) {
+            margin-right: 3rem;
+          }
+        }
+      }
+    }
+    .item {
+      &-number {
+        -webkit-text-stroke: 1px transparentize($color: #fff, $amount: .2);
+        color: transparent;
+        font-size: 6rem;
+        line-height: .8;
+      }
+      &-title {
+      }
+    }
+    @include mq("1440px", "max") {
+      --paddingTop: 10vh;
+      --paddingBot: 25vh;
+      background-position-y: -30vh !important;
+    }
+    @include mq("1366px", "max") {
+      background-position-y: -40vh !important;
+    }
+    @include mq("1280px", "max") {
+      background-position-y: -35vh !important;
+    }
+    @include mq(xl, 'max') {
+      --paddingTop: 5vh;
+      --paddingBot: 10vh;
+      min-height: auto;
+      background-position-y: -15vh!important;
+      .section-des {
+        font-size: 1.4rem;
+        line-height: 1.6;
+      }
+    }
+    @include mq(lg, 'max') {
+      --paddingTop: 5vh;
+      --paddingBot: 10vh;
+      background-position-y: -33vh!important;
+      .section-header {
+        width: 400px;
+      }
+    }
+    @include mq(md, 'max') {
+      --paddingTop: 40vh;
+      --paddingBot: 3rem;
+      background-position-y: -50vh!important;
+      background-position-x: -83vw !important;  
+      background-repeat: no-repeat !important;
+      .container {
+        display: block !important;
+      }
+      .section-footer {
+        a {
+          margin-right: 0 !important;
+        }
+      }
+    }
+  }
+
+  .automotive-section2 {
+    --paddingTop: 0vh;
+    --paddingBot: 0vh;
+    .container {
+        padding-top: var(--paddingTop);
+        padding-bottom: var(--paddingBot);
+    }
+    .section {
+        &-wrapper {
+            width: 500px;
+            max-width: 100%;
+        }
+        &-title {
+            font-size: var(--fontSize);
+            line-height: 1.1;
+        }
+        &-content {
+            p:not(:last-child) {
+              margin-bottom: 1.5rem;
+            }
+        }
+    }
+    @include mq("1440px", "max") {
+      --paddingTop: 5vh;
+      --paddingBot: 5vh;
+      background-position-x: -25vw !important;
+    }
+    @include mq("1366px", "max") {
+      background-position-y: -40vh !important;
+    }
+    @include mq("1280px", "max") {}
+    @include mq(xl, 'max') {
+        --paddingTop: 5vh;
+        --paddingBot: 5vh;
+        min-height: auto;
+        background-position-x: -60vw!important;
+        background-position-y: -15vh !important;
+        .section-wrapper {
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+    }
+    @include mq(lg, 'max') {
+        --paddingTop: 10vh;
+        --paddingBot: 10vh;
+        background-position-x: -85vw!important;
+        background-position-y: -10vh !important;
+        .section-wrapper {
+            width: 500px;
+        }
+    }
+    @include mq(md, 'max') {
+      --paddingTop: 40vh;
+      --paddingBot: 3rem;
+      background-position-x: 100%!important;
+      background-size: 170% !important;
+      background-repeat: no-repeat !important;
+      .section-wrapper {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .text-white {
+        color: $body-color !important;
+      }
+    }
+  }
+
+  .automotive-section3 {
+    .section {
+      &-header {
+        border-color: rgba(255, 255, 255, 0.5);
+      }
+      &-title {
+        font-size: 3rem;
+      }
+      &-subtitle {
+        font-size: 1.6rem;
+      }
+    }
+    @include mq(md, 'max') {
+      .section-header {
+        justify-content: center !important;
+        .btn {
+          margin-top:2rem
+        }
+      }
+    }
+  }
+  
+  .automotive-section4 {
+    --paddingTop: 15vh;
+    padding-top:var(--paddingTop);
+    .section {
+      &-title {
+        font-size: var(--fontSize);
+      }
+    }
+    .item {
+      margin-bottom:3rem;
+      .btn {
+        margin-left: 2rem;
+        min-width: 200px;
+      }
+      &-title {
+        font-size: 2.5rem;
+      }
+    }
+    @include mq(xl, 'max') {
+      min-height: auto;
+      padding-bottom:var(--paddingTop);
+      background-position: center center !important;
+    }
+
+    @include mq(lg, 'max') {
+      --paddingTop: 10vh;
+    }
+
+    @include mq(md, 'max') {
+      --paddingTop: 5rem;
+      background-position: center left!important;
+      text-align: center;
+      .item {
+        justify-content: center;
+        .btn {
+          margin-top:1rem;
+          margin-left: 0;
+        }
+        &-title {
+          font-size: 1.6rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+}
+// Set variables
+@include set-default((blank: ( // _linkColor:rgb(13, 92, 182),
+      1920: (),
+      1440: (),
+      1366: (),
+      1280: (),
+      1024: (),
+      768: (),
+      450: (),
+      360: (),
+    ),
+  ));
+
+/*--------------------------------------------
+    Blank Page
+----------------------------------------------*/
+
+/*#region Mobile responsive section styles*/
+@include mq("1920px") {}
+
+@include mq("1440px", "max") {}
+
+@include mq("1366px", "max") {}
+
+@include mq("1280px", "max") {}
+
+@include mq("1024px", "max") {}
+
+@include mq("768px", "max") {}
+
+@include mq("450px", "max") {}
+
+@include mq("360px", "max") {}
+
+@include mq(xl, 'max') {}
+
+@include mq(lg, 'max') {}
+
+@include mq(md, 'max') {}
+
+/*#endregion*/
+
+/*#region Style fix all browser*/
+/*#region Firefox*/
+@-moz-document url-prefix() {}
+
+/*#endregion*/
+
+/*#region Internet Explorer 10, 11*/
+@include only-for-ie() {}
+
+// @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {}
+/*#endregion*/
+
+/*#region Edge*/
+@include only-for-edge() {}
+
+// @-moz-document url-prefix() {}
+/*#endregion*/
+
+/*#region Safari*/
+@include only-for-retina($pixel-ratio : 1.5) {}
+
+// @media not all and (min-resolution:.001dpcm) {
+//     @supports (-webkit-appearance:none) {
+//         @media screen and (max-width: 450px) {
+//         }
+//     }
+// }
+/*#endregion*/
+/*#endregion*/

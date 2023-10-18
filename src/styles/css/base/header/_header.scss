@@ -1,0 +1,100 @@
+/*--------------------------------
+    Header
+        -Header
+--------------------------------*/
+// Set variables
+@include set-default(
+    (
+        header: (
+			_linkColor: $dark-color,
+			_linkColorHover: $primary-color,
+			_lineColor: $grey-color,
+            color: $dark-color,
+        )
+    )
+);
+
+/*#region nav*/
+	@import "nav-pc";
+	@import "nav-moblie";
+/*#endregion*/
+
+/*#region header*/
+	header {
+		@include print_css(header);
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		a {
+			@include animation($type: color, $time: 0.3s, $effect: ease);
+			color: #{get(header, _linkColor)};
+			i {
+				@include animation($customize: true) {
+					transition: inherit;
+				};
+			}
+			&:hover {
+				color: #{get(header, _linkColorHover)};
+				i {
+					color: inherit;
+				}
+			}
+		}
+	}
+	.header-body {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 90;
+		&-wrapper {
+			padding: 1.5rem 3rem;
+			border-radius: 0 0 3rem 3rem;
+		}
+		.btn {
+			padding: 1rem 2.5rem;
+		}
+		.logo-wrapper {
+			transform: translateY(-3px);
+		}
+		&.fixed {
+			background-color: #fff;
+		}
+	}
+	
+	#nav-pc {
+		.nav-pc-body {
+			> li {
+				> .has-submenu-title > a,
+				> a {
+					padding: 1rem 0;
+					text-transform: uppercase;
+					letter-spacing: .05em;
+				}
+				> .has-submenu-title > a::after {
+					margin-left: .5rem;
+				}
+			}
+		}
+	}
+	#nav-mobile {
+		.--left {
+			width: 154px;
+		}
+	}
+	#nav-mobile-content {
+		height: calc(100svh - 60px);
+		top: 60px;
+		border-top: 1px solid $border-color;
+	}
+/*#endregion*/
+
+/*#region Mobile responsive section styles*/
+	@include mq(md, 'max') {
+		#nav-mobile .--left {
+			width: auto;
+		}
+	}
+/*#endregion*/

@@ -1,0 +1,73 @@
+/*------------------------------------
+    Blog
+        - Default
+        - List
+        - Widget
+------------------------------------*/
+
+// Variables
+@include set-default(
+    (
+        post: (
+            media:(),
+            details:(),
+            lg:(),
+            md:(),
+            sm:(),
+            xs:(),
+        )
+    )
+);
+
+// Default
+.post {
+    &-media {}
+    &-details {}
+    &-label {
+        &-group {}
+    }
+    &-calendar {
+        .post-day {}
+        .post-month {}
+    }
+    &-cat {}
+    &-title {
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+    &-content {
+    }
+    &-post-meta {
+        a {}
+    }
+    &-item {
+        border-bottom: 1px solid #232628;
+    }
+}
+/*#region Mobile responsive section styles*/
+@include mq(xl, 'max') {}
+@include mq(lg) {
+    .post-item {
+        .post-title  {
+            @include overtext($row: 2, $h: 41px);
+        }
+        .post-content  {
+            @include overtext($row: 4, $h: 90px);
+        }
+    }
+}
+@include mq(lg, 'max') {
+    .post-item {
+        .post-title {
+            font-size: 1.4rem;
+        }
+    }
+}
+@include mq(md, 'max') {
+    .post-item {
+        .post-title {
+            font-size: 1.8rem;
+        }
+    }
+}
+/*#endregion*/

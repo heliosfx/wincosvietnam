@@ -1,0 +1,200 @@
+/* 1. Config */
+@import '../config/variables';
+
+/* 2. Mixins */
+@import '../mixins/breakpoint';
+@import '../mixins/core';
+@import '../mixins/buttons';
+@import '../mixins/mixins';
+
+
+/*#region components,elements*/
+  @import '../components/sidebar';
+  @import '../components/pagination';
+/*#endregion*/
+
+/*#region .item-*/
+    @import '../components/item-blog';
+/*#endregion*/
+
+.sidebar {
+  select {
+      background-color: $grey-background-light;
+      border-right: 5px solid $primary-color;
+  }
+  @include placeholder($target:'input') {
+      color: $primary-color
+  };
+  .widget {
+      margin-bottom: 3rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid #ddd;
+      
+      .widget-title {
+          padding-right: 0;
+          border: 0;
+          font-weight: $font-weight-bold;
+          font-size: 1.6rem;
+      }
+      .widget-body {
+          margin-bottom: 0 !important;
+      }
+  }
+  .widget-search-form {
+      .form-wrapper {
+          background-color: $grey-background-light;
+          border-radius: 25px;
+      }
+      .form-control {
+          border: 0;
+          width: calc(100% - 4.7rem);
+      }
+      button {
+          background-color: transparent;
+          border:0;
+          padding: 0;
+          font-size: 2rem;
+          width: 4.7rem;
+          text-align: center;
+          &:hover {
+              color: $primary-color;
+              background-color: transparent;
+          }
+      }
+  }
+  .widget-tag {
+      .tag {
+          display: inline-block;
+          padding: 6px 12px;
+          background: #FFF;
+          box-shadow: 0px 1px 4px 0px rgba(0, 1, 1, 0.20);
+          color: #AAAAAA;
+          font-size: 1.3rem;
+          margin: 0 10px 10px 0;
+      }
+  }
+  .widget-blogs {
+      li:not(:last-child) {
+          margin-bottom: 1rem;
+      }
+  }
+}
+
+#blogcat-page {
+  .blogcat {
+      .section {
+          &-header {
+              ul {
+                  margin: 0;
+                  padding: 0 0 .5rem 0;
+              }
+              li {
+                  a {
+                      padding: 6px 12px;
+                      color: $primary-color;
+                      background-color: transparent;
+                      display: block;
+                      border-radius: 20px;
+                  }
+                  &:not(:last-child) {
+                      margin-right: 1.5rem;
+                  }
+                  &:hover,
+                  &.active {
+                      a {
+                          background-color: #BBCCE9;
+                          color: #666666;
+                      }
+                  }
+              }
+          }
+      }
+  }
+}
+#blogdetail-page {
+  h1 {
+      line-height: 1.3;    
+  }
+  .blogdetail .section-body {
+      background-color: #fff;
+      padding: 3rem 1.5rem;
+  }
+  @include mq(md, 'max') {
+      .blogdetail .section-body {
+          margin-left: -15px;
+          margin-right: -15px;
+      }
+  }
+}
+
+// Set variables
+@include set-default((blank: ( // _linkColor:rgb(13, 92, 182),
+      1920: (),
+      1440: (),
+      1366: (),
+      1280: (),
+      1024: (),
+      768: (),
+      450: (),
+      360: (),
+    ),
+  ));
+
+/*--------------------------------------------
+    Blank Page
+----------------------------------------------*/
+
+/*#region Mobile responsive section styles*/
+@include mq("1920px") {}
+
+@include mq("1440px", "max") {}
+
+@include mq("1366px", "max") {}
+
+@include mq("1280px", "max") {}
+
+@include mq("1024px", "max") {}
+
+@include mq("768px", "max") {}
+
+@include mq("450px", "max") {}
+
+@include mq("360px", "max") {}
+
+@include mq(xl, 'max') {}
+
+@include mq(lg, 'max') {}
+
+@include mq(md, 'max') {}
+
+/*#endregion*/
+
+/*#region Style fix all browser*/
+/*#region Firefox*/
+@-moz-document url-prefix() {}
+
+/*#endregion*/
+
+/*#region Internet Explorer 10, 11*/
+@include only-for-ie() {}
+
+// @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {}
+/*#endregion*/
+
+/*#region Edge*/
+@include only-for-edge() {}
+
+// @-moz-document url-prefix() {}
+/*#endregion*/
+
+/*#region Safari*/
+@include only-for-retina($pixel-ratio : 1.5) {}
+
+// @media not all and (min-resolution:.001dpcm) {
+//     @supports (-webkit-appearance:none) {
+//         @media screen and (max-width: 450px) {
+//         }
+//     }
+// }
+/*#endregion*/
+/*#endregion*/
