@@ -93,7 +93,7 @@ get_header();
                     </div>
                 </div>
                 <div class="section-footer d-flex justify-content-center flex-wrap">
-                    <a class="btn btn-primary btn-outline text-normal font-weight-normal btn-ellipse">Phim cách nhiệt công trình</a><a class="btn btn-primary btn-outline text-normal font-weight-normal btn-ellipse">Phim kiểm soát tầm nhìn</a><a class="btn btn-primary btn-outline text-normal font-weight-normal btn-ellipse">al.font-weight-normal.btn-ellipse Phim dán trang trí</a>
+                    <a class="btn btn-primary btn-outline text-normal font-weight-normal btn-ellipse">Phim cách nhiệt công trình</a><a class="btn btn-primary btn-outline text-normal font-weight-normal btn-ellipse">Phim kiểm soát tầm nhìn</a><a class="btn btn-primary btn-outline text-normal font-weight-normal btn-ellipse">Phim dán trang trí</a>
                 </div>
             </div>
         </div>
