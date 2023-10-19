@@ -141,8 +141,16 @@
         </div>
     </div>
 </div>
-<div class="product product-single product-popup fancybox-fade fancybox-hide" id="product-popup">
-    <div class="shimmer-container" id="product-popup-ajax"></div>
+<div class="fancybox-fade fancybox-hide br-sm" id="cookie-popup">
+    <div class="cookie-body mb-4">
+        <div class="cookie-title font-weight-bold h4 mb-1">🍪 Cookie Notice</div>
+        <div class="cookie-content title-des">
+            <p>Trang web có sử dụng cookie để nâng cao trải nghiệm người dùng. Đọc “<a href="" title="chính sách cookie">chính sách cookie</a>”  và nếu bạn đồng ý với việc sử dụng cookie, hãy chọn "Đồng ý và Đóng".</p>
+        </div>
+    </div>
+    <div class="cookie-footer d-flex display justify-content-end">
+        <button class="btn btn-primary btn-ellipse text-normal" id="btn-acceptcookie">Đồng ý và đóng</button>
+    </div>
 </div>
 <div id="loading">
     <div class="loading-content">

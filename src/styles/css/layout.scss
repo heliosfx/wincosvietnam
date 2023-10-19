@@ -129,7 +129,18 @@
   border-width: 1px;
 }
 body {
-  background-color: #F1F3F4;
+  --borderRadiusSection: 40rem;
+  --bgMain: #F1F3F4;
+  background-color: var(--bgMain);
+  @include mq(xl, 'max') {
+    --borderRadiusSection: 30rem;
+  }
+  @include mq(lg, 'max') {
+    --borderRadiusSection: 20rem;
+  }
+  @include mq(md, 'max') {
+    --borderRadiusSection: 10rem;
+  }
 }
 .breadcrumb {
   --paddingTop: calc(10vh + 73px);
@@ -152,6 +163,16 @@ body {
   }
   @include mq(lg, 'max') {
     --paddingTop: 3rem;
+  }
+}
+.section-border-radius {
+  margin-bottom: calc(var(--borderRadiusSection)*-1);
+  > .container {
+    margin-bottom: var(--borderRadiusSection);
+  }
+  + .section-border-radius-next {
+    border-top-right-radius: var(--borderRadiusSection);
+    overflow: hidden;
   }
 }
 /*#region Mobile responsive section styles*/

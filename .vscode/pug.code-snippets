@@ -1,0 +1,222 @@
+{
+	// Place your 0_Blank_Theme workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"New section": {
+		"scope": "pug,jade",
+		"prefix": "pug-sec",
+		"body": [
+			"//- blank",
+			"section(id='blank')",
+			"	.section-header",
+			"	.section-body",
+			"	.section-footer",
+			"//- end blank"
+		],
+		"description": "Tạo mới section"
+	},
+	"New item": {
+		"scope": "pug,jade",
+		"prefix": "pug-item",
+		"body": [
+			".item",
+			"	figure.item-media",
+			"		picture.img-decode",
+			"			source(media='' srcset=dist+'/default/ABC.JPG?w=&h=&crop=auto&format=webp' type='image/webp')",
+			"			img(src=dist+`${item}?w=&h=` alt='' loading='lazy' width='' height='')",
+			"	.item-details",
+			"		h3.item-title",
+			"			a(href='' title='') NAME",
+			"		.item-content DES",
+			"		.item.btn-wrap",
+			"			a.btn(href='' title='') BUTTON"
+		],
+		"description": "Tạo mới item"
+	},
+	"Picture tag": {
+		"scope": "pug,jade",
+		"prefix": "pug-pic",
+		"body": [
+			"figure",
+			"	picture.img-decode",
+			"		source(media='(max-width:450px)' srcset='' type='image/webp')",
+			"		source(media='(max-width:450px)' srcset='')",
+			"		source(media='' srcset=dist+'/default/ABC.JPG?w=&h=&crop=auto&format=webp' type='image/webp')",
+			"		img(src=dist+`${item}?w=&h=` alt='' width='' height='' loading='lazy')"
+		],
+		"description": "Tạo mới picture"
+	},
+	"Youtube img": {
+		"scope": "pug,jade",
+		"prefix": "pug-yputube_img",
+		"body": [
+			"img(src='https://img.youtube.com/vi/S2bmkVMkRA/maxresdefault.jpg' alt=''  width='' height='' loading='lazy')"
+		],
+		"description": "Tạo mới youtube thumb"
+	},
+	"Star container": {
+		"scope": "pug,jade",
+		"prefix": "pug-star",
+		"body": [
+			".ratings-container",
+			"	.ratings-full",
+			"		span.ratings(style=\"width: 10%;\")"
+		],
+		"description": "Tạo mới rating"
+	},
+	"Checkbox container": {
+		"scope": "pug,jade",
+		"prefix": "pug-check",
+		"body": [
+			".custom-radio",
+			"	input.custom-control-input(type='checkbox' name='check1' id='check1' value='')",
+			"	label.custom-control-label(for='check1') NAME"
+		],
+		"description": "Tạo mới checkbox"
+	},
+	"Sidebar container": {
+		"scope": "pug,jade",
+		"prefix": "pug-side",
+		"body": [
+			".container",
+			"	.row",
+			"		.main-content",
+			"		aside#sidebar.sidebar.sidebar-fixed.sticky-sidebar-wrapper.right-sidebar",
+            "        .sidebar-overlay"
+            "            a.sidebar-close(href='javascript:')",
+            "               i.close-icon",
+            "       	a.sidebar-toggle(href='javascript:')",
+            "           	i.demo-icon.cus-filter",
+            "       	- let sideIcon = false",
+            "       	- let sideBarCat = true;",
+            "       	- let sideBarProduct = false;",
+            "       	- let sideBarBlog = false;",
+            "       	- let sideBarTag = true;",
+            "       	- let sideBarFilter = true;",
+            "       	include components/_sidebar.pug"
+		],
+		"description": "Tạo mới sidebar"
+	},
+	"Modal": {
+		"scope": "pug,jade",
+		"prefix": "pug-modal",
+		"body": [
+			"a.btn.btn-primary(data-toggle='modal' href='#info|noti|popup|registration|-modal') OPEN MODAL"
+		],
+		"description": "Tạo mới modal"
+	},
+	"Swiper slider": {
+		"scope": "pug,jade",
+		"prefix": "pug-swiper",
+		"body": [
+			".swiper.swiper-container.swiper-theme(data-swiper-options=`{'breakpoints': {'0': {'slidesPerView': 1,'spaceBetween': 20},'768': {'slidesPerView': 2,'spaceBetween': 20},'992': {'slidesPerView': 3,'spaceBetween': 20},'1200': {'slidesPerView': 4,'spaceBetween': 20}}}`)",
+			"	.swiper-wrapper",
+			"		.swiper-slide",
+			"			figure",
+			"				a.item(href='' title='')",
+			"					picture.img-decode",
+			"						source(media='(max-width:450px)' srcset='' type='image/webp')",
+			"						source(media='(max-width:450px)' srcset='')",
+			"						source(media='' srcset=dist+'/default/ABC.JPG?w=&h=&crop=auto&format=webp' type='image/webp')",
+			"						img(src=dist+`${item}?w=&h=` alt='' width='' height='' loading='lazy')",
+			"	//- Add Arrows",
+			"	button.swiper-button-next.swiper-button",
+			"	button.swiper-button-prev.swiper-button",
+			"	.swiper-pagination"
+		],
+		"description": "Tạo mới slider"
+	},
+	"From contact": {
+		"scope": "pug,jade",
+		"prefix": "pug-form",
+		"body": [
+			"form#js-contact-form.flex-container(action='/aj/Shared/Contact' method='post' onsubmit='return false;submitcontact()')",
+			"	.error-lst.alert-danger(style='display: none')",
+			"		ul",
+			"	input.form-control.get-value(type='text' name='name' placeholder='Họ và tên*' data-required='required' data-alert='Họ và tên' data-type='0')",
+			"	input.form-control.get-value(type='email' name='email' placeholder='Email*' data-required='required' data-alert='Email' data-type='0')",
+			"	input.form-control.get-value(type='tel' name='phonenumber' placeholder='Số điện thoại*' data-required='required' data-alert='Số điện thoại' data-type='0')",
+			"	textarea.form-control.get-value(name='body' placeholder='Nội dung*' data-required='required' data-alert='Nội dung' data-type='3')",
+			"	button.btn.btn-primary.btn-big.btn-loading.m20--top(type='submit' onclick="submitcontact('#js-contact-form')") Gửi",
+			"	input(type='hidden' name='ContactType' value='0')",
+			"	input(type='hidden' name='Action' value='/aj/Shared/Contact')",
+			"	input(type='hidden' name='Title' value='Liên hệ từ trang liên hệ')",
+			"	input(type='hidden' name='Note' value='Cảm ơn bạn đã liên hệ với chúng tôi. Chúng tôi sẽ liên lạc với bạn trong thời gian sớm nhất')"
+		],
+		"description": "Form liên hệ"
+	},
+	"Tabs": {
+		"scope": "pug,jade",
+		"prefix": "pug-tab",
+		"body": [
+			".tab-nav-underline.tab-nav-boxed.nav.tab-js.nav-tabs(role='tablist')",
+			"	li.nav-item",
+			"		a.nav-link.active(href='#tab1')",
+			"			span Tab1",
+			"	li.nav-item",
+			"		a.nav-link(href='#tab2')",
+			"			span Tab2",
+			".tab-content",
+			"	#tab1.tab-pane.active",
+			"	#tab2.tab-pane"
+		],
+		"description": "Tạo tabs"
+	},
+	"Fancybox": {
+		"scope": "pug,jade",
+		"prefix": "pug-fancybox",
+		"body": [
+			".item.figure",
+            "   a.img(data-fancybox='gallery' data-src='' data-caption='')",
+            "       picture.img-decode",
+            "           source(media='' srcset=dist+`${item}?w=&h=&crop=auto&format=webp` type='image/webp')",
+            "           img(src=dist+`${item}?w=&h=` alt='' width='' height='' loading='lazy')"
+		],
+		"description": "Tạo Fancy Box"
+	},
+	"Select filter": {
+		"scope": "pug,jade",
+		"prefix": "pug-select",
+		"body": [
+			".select-menu-filter.d-block.d-lg-none.mb-8(data-text='Jump to...')",
+			"	.select-menu-header",
+			"		span.text Jump to...",
+			"		i.icon",
+			"	.select-menu-body",
+			"		.select-menu-search.p-relative",
+			"			input#select-menu-filter-input.form-control(type='search' placeholder='Jump to...')",
+			"			i.icon",
+			"		ul.nav.select-menu-content",
+			"			each item in menu",
+			"				if item.children == null",
+			"					if item.isShow",
+			"						li(data-id='' class=item.isActive ? 'active' : '')",
+			"							a(href=item.href)=item.name",
+			"				else",
+			"					if item.isShow",
+			"						li(data-id='' class=item.isActive ? 'active' : '')",
+			"							a(href='') #{item.name} <svg width="12" height="7" viewBox="0 0 12 7" xmlns="http://www.w3.org/2000/svg"><path d="M10.95 2.364A1 1 0 109.536.95L6 4.485 2.465.95A1 1 0 001.05 2.364l4.243 4.243a1 1 0 001.414 0v-.001l4.243-4.242z" fill="currentColor" fill-rule="evenodd"></path></svg>",
+			"							ul.nav",
+			"								each item_child in item.children",
+			"									if item_child.children == null",
+			"										if item.isShow",
+			"											li(data-id='' class=item_child.isActive ? 'active' : '')",
+			"												a(href=item_child.href)=item_child.name",
+			"									else",
+			"										if item_child.isShow",
+			"											li(data-id='' class=item_child.isActive ? 'active' : '')",
+			"													a(href='') #{item_child.name} <svg width="12" height="7" viewBox="0 0 12 7" xmlns="http://www.w3.org/2000/svg"><path d="M10.95 2.364A1 1 0 109.536.95L6 4.485 2.465.95A1 1 0 001.05 2.364l4.243 4.243a1 1 0 001.414 0v-.001l4.243-4.242z" fill="currentColor" fill-rule="evenodd"></path></svg>",
+			"													ul.nav",
+			"														each item_child_child in item_child.children",
+			"															if item_child_child.isShow",
+			"																li(data-id='' class=item_child_child.isActive ? 'active' : '')",
+			"																	a(href=item_child_child.href)=item_child_child.name",
+			"		.select-menu-info Không có kết quả phù hợp"
+		],
+		"description": "Tạo select filter"
+	},
+}

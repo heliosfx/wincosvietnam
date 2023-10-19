@@ -1,4 +1,5 @@
 <script>
+    const themeAssetUrl = "<?php echo THEME_ASSET_URL ?>";
     function wincoContactForm() {
         $form = jQuery('#js-contactmodal-form');
         const data = $form.serialize();
@@ -21,6 +22,12 @@
                     }], {}, 'success');
             }
         });
+    }
+    if (document.documentElement.clientWidth > 1100) {
+        setTimeout(function () {
+            //addScript('/release/main.min.js')
+            addScript(themeAssetUrl + 'release/instantpage.min.js')
+        }, 3000);
     }
     document.addEventListener("DOMContentLoaded", function() {
         var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazyload-bg"));
@@ -75,7 +82,6 @@
             });
         }
     });
-    const themeAssetUrl = "<?php echo THEME_ASSET_URL ?>";
     addCss(themeAssetUrl + 'release/all.min.css');
     addScript(themeAssetUrl + 'release/default.min.js').then(function() {
         addScript(themeAssetUrl + 'release/all.min.js');

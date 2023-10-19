@@ -735,9 +735,9 @@ window.Ecsgroup = {};
   // Initialize Ecsgroup Theme
   document.onreadystatechange = function () {
     if (document.readyState === "complete") {
-      if (Ecsgroup.isSafari == true) {
-        addCSS(Ecsgroup.dist + '/safari.css');
-      }
+      // if (Ecsgroup.isSafari == true) {
+      //     addCSS(Ecsgroup.dist + '/safari.css')
+      // }
     }
   };
   window.onload = function () {

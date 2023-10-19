@@ -50,7 +50,7 @@
 		width: 100%;
 		z-index: 90;
 		&-wrapper {
-			padding: 1.5rem 3rem;
+			padding: 0 3rem;
 			border-radius: 0 0 3rem 3rem;
 		}
 		.btn {
@@ -69,12 +69,36 @@
 			> li {
 				> .has-submenu-title > a,
 				> a {
-					padding: 1rem 0;
+					position: relative;
+					padding: 2.5rem 0;
 					text-transform: uppercase;
 					letter-spacing: .05em;
+					&::before {
+						content: '';
+						width: 3.75rem;
+						height: 4px;
+						bottom: 0;
+						position: absolute;
+						transition: 250ms cubic-bezier(.645,.045,.355,1);
+						transform-origin: center center;
+						opacity: 0;
+						background-color: $primary-color;
+						transform: translateX(-50%) scaleX(0);
+						left: 50%;
+					}
 				}
 				> .has-submenu-title > a::after {
 					margin-left: .5rem;
+				}
+				.active,
+				&:hover {
+					> .has-submenu-title > a,
+					> a {
+						&::before {
+							transform: translateX(-50%) scaleX(1);
+   	 						opacity: 1;
+						}
+					}
 				}
 			}
 		}

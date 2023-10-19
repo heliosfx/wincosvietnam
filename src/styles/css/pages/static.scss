@@ -101,7 +101,6 @@
 #architecture-page {
   --fontSize: clamp(4rem,6vw,8rem);
   background-color: #fff;
-  --borderRadius: 40rem;
   section {
     background-repeat: no-repeat;
     @include mq(xl) {
@@ -109,8 +108,8 @@
     }
   }
   .architecture-item {
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #000;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(165,163,169,.5);
     @include mq(md, 'max') {
       .architecture-title {
         font-size: 1.6rem;
@@ -133,10 +132,6 @@
     background-size: cover;
     padding-top: var(--paddingTop);
     padding-bottom: var(--paddingBot);
-    margin-bottom: calc(var(--borderRadius)*-1);
-    > .container {
-      margin-bottom: var(--borderRadius);
-    }
     .section {
       &-title {
         font-size: var(--fontSize);
@@ -159,7 +154,6 @@
     --fontSize: clamp(3rem,5vw,4rem);
     background-position: center center;
     background-size: cover;
-    border-top-right-radius: var(--borderRadius);
     .section {
       &-header {
         width: 530px;
@@ -209,14 +203,16 @@
     }
     @include mq(xl, 'max') {
       --paddingTop: 10vh;
+      --marginRight: 5rem;
+    }
+    @include mq(lg, 'max') {
+      --paddingTop: 5vh;
       .section-header {
         width: 100%;
       }
     }
-    @include mq(lg, 'max') {
-      --paddingTop: 5vh;
-    }
     @include mq(md, 'max') {
+      --marginRight: 0rem;
       .container {
         display: block !important;
       }
@@ -233,6 +229,7 @@
     --paddingTop: 10vh;
     --paddingBot: 15vh;
     background-repeat:no-repeat !important;
+    background-position: top right;
     padding-top: var(--paddingTop);
     .section {
       &-header {
@@ -355,7 +352,6 @@
       }
     }
   }
-  
 }
 
 #adn-page {
@@ -392,6 +388,7 @@
 
   .adn-section2 {
     --fontSize: clamp(4rem,5vw,6rem);
+    background-color: var(--bgMain);
     .section {
       &-title {
         font-size: var(--fontSize);
@@ -529,7 +526,7 @@
             padding-right: 0;
           }
           .section-details {
-            padding-left: 3rem;
+            // padding-left: 1.5rem;
           }
         }
         &:nth-child(even) {
@@ -538,7 +535,7 @@
             padding-left: 0;
           }
           .section-details {
-            padding-right: 3rem;
+            // padding-right: 1.5rem;
           }
         }
       }
@@ -753,8 +750,8 @@
   }
   
   .automotive-item {
-    padding-top: 1rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding-top: 2rem;
+    border-top: 1px solid rgba(165,163,169,.5);
     .automotive-content {
       color: #F1F3F4;
     }
@@ -788,6 +785,18 @@
       line-height: .8;
       span {
         font-size: 50%;
+      }
+    }
+    .automotive-media {
+      border-top-right-radius: 3rem;
+      overflow: hidden;
+      img {
+        transition: transform .6s cubic-bezier(.215,.61,.355,1);
+      }
+    }
+    &:hover {
+      .automotive-media img {
+        transform: scale(1.1);
       }
     }
     @include mq(xl, 'max') {
@@ -829,7 +838,7 @@
     background-position: top center !important;
     .section {
       &-header {
-        width: 600px;
+        width: 610px;
         max-width: 100%;
         margin-left: auto;
         padding-top: var(--paddingTop);
@@ -858,10 +867,19 @@
     }
     .item {
       &-number {
-        -webkit-text-stroke: 1px transparentize($color: #fff, $amount: .2);
-        color: transparent;
-        font-size: 6rem;
-        line-height: .8;
+        svg {
+          font-size: 7.5rem;
+          width: 100px;
+          height: 70px;
+          font-weight: $font-weight-bold;
+          line-height: normal;
+          font-family: HelveticaNowText-Bold, sans-serif;
+        }
+        text {
+          stroke-width: 1.5px;
+          fill: none;
+          stroke: rgba(255,255,255,.4);
+        }
       }
       &-title {
       }
