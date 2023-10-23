@@ -44,10 +44,14 @@
         }
     }
 
+    .index-section2,
+    .index-section3 {
+        min-height: 130svh;
+    }
+
     .index-section4 {
-        --fontSize: clamp(4rem,5vw,6rem);
+        --fontSize: clamp(4rem,5vw,7rem);
         .btn {
-            min-width: 160px;
             font-weight: $font-weight-normal;
         }
         .section {
@@ -122,7 +126,7 @@
             }
         }
         .item-wrap {
-            margin-bottom: 2.5rem;
+            margin-bottom: 3.5rem;
         }
         .item {
             --borderRadius: 3rem;
@@ -140,6 +144,7 @@
                 padding: 7px 15px;
                 border-width: 1px;
                 font-size: 1.3rem;
+                min-width: auto;
             }
             &:after {
                 content: "";
@@ -194,6 +199,11 @@
         }
         &-content {
             line-height: 32px;
+            font-size: 1.5rem;
+        }
+        &-des {
+            font-size: 1.8rem;
+            margin-bottom: 5rem !important;
         }
     }
     @include mq(xl, 'max') {
@@ -246,6 +256,9 @@
         }
         &-content {
             line-height: 32px;
+        }
+        &-des {
+            font-size: 1.8rem;
         }
     }
     @include mq(xl, 'max') {

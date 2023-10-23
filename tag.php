@@ -5,10 +5,10 @@ $category = get_queried_object();
 <main class="page-wrapper main" id="blogcat-page">
   <?php theme_partial('global/breadcrumb', ['header' => __('Tag: ') . $category->name]) ?>
   <div class="container mb-5">
-    <div class="row">
+    <div class="row gutter-xl">
       <div class="col-md-8 col-lg-9 mb-5">
         <section class="blogcat" id="blogcat">
-          <div class="section-body row cols-md-2 cols-1">
+          <div class="section-body row cols-md-2 cols-1 gutter-xl">
             <?php if (have_posts()) : while (have_posts()) :  the_post() ?>
                 <?php theme_partial('post/loop-item') ?>
             <?php endwhile;

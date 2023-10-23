@@ -11,7 +11,7 @@ get_header();
         <div class="container text-primary h-auto d-flex flex-wrap">
             <div class="section-body mt-auto">
                 <div class="section-subtitle h5 text-primary font-weight-normal">Wincos ADN</div>
-                <h1 class="section-title text-primary w-100">Giá trị cốt lõi</h1>
+                <h1 class="section-title text-primary w-100">Giá trị<br> cốt lõi</h1>
             </div>
         </div>
     </section>
@@ -45,8 +45,8 @@ get_header();
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
                     <div class="section-details">
-                        <div class="section-subtitle h5 font-weight-normal mb-5">01 <span class="title-line-left text-normal">Chất lượng cao</span></div>
-                        <h2 class="section-title text-primary font-weight-normal">Phim cách nhiệt hỗ trợ sự tiện nghi</h2>
+                        <div class="section-subtitle h5 font-weight-normal mb-10">01 <span class="title-line-left text-normal">Chất lượng cao</span></div>
+                        <h2 class="section-title text-primary">Phim cách nhiệt hỗ trợ<br/> sự tiện nghi</h2>
                         <div class="section-content des-title text-justify mb-5">
                             <p>Bắt đầu với mong muốn mang đến một môi trường thoải mái và tiết kiệm năng lượng, phim cách nhiệt cho các tòa nhà đã đáp ứng nhu cầu của thời đại để "đảm bảo rằng mọi người có thể cảm thấy an toàn và yên tâm ngay cả trong trường hợp khẩn cấp.
                             </p>
@@ -67,8 +67,8 @@ get_header();
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
                     <div class="section-details">
-                        <div class="section-subtitle h5 font-weight-normal mb-5">02 <span class="title-line-left text-normal">Công nghệ</span></div>
-                        <h2 class="section-title text-primary font-weight-normal">Công nghệ sản xuất 1 + 1 = 5 hoặc 6</h2>
+                        <div class="section-subtitle h5 font-weight-normal mb-10">02 <span class="title-line-left text-normal">Công nghệ</span></div>
+                        <h2 class="section-title text-primary">Công nghệ sản xuất<br /> 1 + 1 = 5 hoặc 6</h2>
                         <div class="section-content des-title text-justify mb-5">
                             <p>Tại Wincos, chúng tôi chọn phim, phát triển chất kết dính theo môi trường mà chúng được sử dụng và sử dụng các công nghệ phủ bề mặt đặc biệt để tạo ra các loại phim bổ sung nhiều chức năng khác nhau cho một màng duy nhất. Chẳng hạn như độ trong suốt cao, che chắn nhiệt và truyền sóng vô tuyến. Tận dụng khả năng công nghệ mà chúng tôi đã trau dồi qua nhiều năm nghiên cứu và phát triển, chúng tôi cung cấp những tấm phim có giá trị tiên tiến vượt thời đại.</p>
                         </div>
@@ -86,8 +86,8 @@ get_header();
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
                     <div class="section-details">
-                        <div class="section-subtitle h5 font-weight-normal mb-5">02 <span class="title-line-left text-normal">Mạng lưới</span></div>
-                        <h2 class="section-title text-primary font-weight-normal">Đem những giá trị tốt đẹp ra toàn thế giới</h2>
+                        <div class="section-subtitle h5 font-weight-normal mb-10">02 <span class="title-line-left text-normal">Mạng lưới</span></div>
+                        <h2 class="section-title text-primary">Đem những giá trị tốt đẹp<br/> ra toàn thế giới</h2>
                         <div class="section-content des-title text-justify mb-5">
                             <p>Thông qua việc hợp tác phát triển với các công ty có nhiều thế mạnh, cũng như hợp tác với các nhà phân phối và lắp đặt, chúng tôi đáp ứng cẩn thận nhu cầu của khách hàng và luôn cung cấp sản phẩm chất lượng cao nhất.
                             </p>
