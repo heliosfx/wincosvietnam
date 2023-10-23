@@ -10,11 +10,12 @@
                     <div class="widget-about-desc mt-4">
                         <p class="phone-list"><i class="demo-icon cus-win-phone"></i><a href="tel:84-274-3628268">84-274-3628268</a><a href="tel:(+84) 274 3628269">(+84) 274 3628269</a></p>
                         <p class="phone-list"><i class="demo-icon cus-win-email"></i><a href="mailto:lv-wincos@lintec.com.sg">lv-wincos@lintec.com.sg</a></p>
+                        <p class="phone-list"><i class="demo-icon cus-facebook"></i><a href="">lv-wincos@lintec.com.sg</a></p>
                     </div>
                 </div>
             </div>
             <div class="col mb-4">
-                <h3 class="widget-title"><?php _e(cs_get_option('footer_1_heading')) ?></h3>
+                <h3 class="widget-title"><a href="<?=home_url('automotive') ?>/" title="Phim cách nhiệt ô tô"><?php _e(cs_get_option('footer_1_heading')) ?></a></h3>
                 <?php
                 if ($footer_1 = cs_get_option('footer_1_menu')) {
                     wp_nav_menu([
@@ -26,7 +27,7 @@
                 ?>
             </div>
             <div class="col mb-4">
-                <h3 class="widget-title"><?php _e(cs_get_option('footer_2_heading')) ?></h3>
+                <h3 class="widget-title"><a href="<?=home_url('san-pham') ?>/" title="Phim cách nhiệt công trình"><?php _e(cs_get_option('footer_2_heading')) ?></a></h3>
                 <?php
                 if ($footer_2 = cs_get_option('footer_2_menu')) {
                     wp_nav_menu([
