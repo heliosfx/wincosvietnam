@@ -26,7 +26,7 @@ get_header();
             </div>
             <div class="mt-auto">
                 <div class="section-body mb-2">
-                    <div class="row gutter-lg">
+                    <div class="row gutter-xl">
                         <div class="col-6 col-lg-3 mb-3">
                             <div class="item">
                                 <div class="item-number">
@@ -92,7 +92,7 @@ get_header();
     <section class="architecture-section3 pb-5 pb-md-10" style="background: url(<?php echo THEME_ASSET_URL ?>images/architecture/architecture-img3.png), #fff 50% / cover no-repeat">
         <div class="container">
             <div class="section-header">
-                <div class="section-subtitle h5 font-weight-normal mb-5">01 <span class="text-primary title-line-left text-normal">Phim cách nhiệt công trình</span></div>
+                <div class="section-subtitle h5 font-weight-normal">01 <span class="text-primary title-line-left text-normal">Phim cách nhiệt công trình</span></div>
                 <div class="row">
                     <div class="col-12 col-lg-6 mb-5">
                         <h2 class="section-title font-weight-semibold">Phim cách nhiệt công trình</h2>
@@ -104,7 +104,7 @@ get_header();
             </div>
             <div class="section-body mb-5">
                 <div class="section-subtitle h1 font-weight-normal text-primary mb-5 mb-md-10">Tính năng</div>
-                <div class="row gutter-lg">
+                <div class="row gutter-xl architecture-item-list">
                     <div class="col-6 col-md-4 mb-md-10 mb-5">
                         <div class="architecture-item h-100">
                             <figure class="architecture-icon"><img src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-icon1.png" alt="Điều chỉnh bức xạ mặt trời" width="80" height="80" loading="lazy" /></figure>
@@ -220,7 +220,7 @@ get_header();
             <div class="section-footer row">
                 <div class="col-6 col-md-4 mb-md-10 mb-5">
                     <div class="architecture1-item h-100">
-                        <figure class="architecture1-media"><img src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product1.jpg" alt="Chống vỡ trong suốt" width="376" height="283" loading="lazy" /></figure>
+                        <figure class="architecture1-media"><img class="w-100" src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product1.jpg" alt="Chống vỡ trong suốt" width="376" height="283" loading="lazy" /></figure>
                         <div class="architecture1-details">
                             <h3 class="architecture1-title text-primary mt-3 mb-1 h4 font-weight-normal">Chống vỡ trong suốt</h3>
                             <div class="architecture1-content text-justify">
@@ -231,7 +231,7 @@ get_header();
                 </div>
                 <div class="col-6 col-md-4 mb-md-10 mb-5">
                     <div class="architecture1-item h-100">
-                        <figure class="architecture1-media"><img src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product2.jpg" alt="Chống côn trùng" width="376" height="283" loading="lazy" /></figure>
+                        <figure class="architecture1-media"><img class="w-100"src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product2.jpg" alt="Chống côn trùng" width="376" height="283" loading="lazy" /></figure>
                         <div class="architecture1-details">
                             <h3 class="architecture1-title text-primary mt-3 mb-1 h4 font-weight-normal">Chống côn trùng</h3>
                             <div class="architecture1-content text-justify">
@@ -242,7 +242,7 @@ get_header();
                 </div>
                 <div class="col-6 col-md-4 mb-md-10 mb-5">
                     <div class="architecture1-item h-100">
-                        <figure class="architecture1-media"><img src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product3.jpg" alt="Điều khiển năng lượng mặt trời/ kim loại" width="376" height="283" loading="lazy" /></figure>
+                        <figure class="architecture1-media"><img class="w-100"src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product3.jpg" alt="Điều khiển năng lượng mặt trời/ kim loại" width="376" height="283" loading="lazy" /></figure>
                         <div class="architecture1-details">
                             <h3 class="architecture1-title text-primary mt-3 mb-1 h4 font-weight-normal">Điều khiển năng lượng mặt trời / kim loại</h3>
                             <div class="architecture1-content text-justify">
@@ -253,7 +253,7 @@ get_header();
                 </div>
                 <div class="col-6 col-md-4 mb-md-10 mb-5">
                     <div class="architecture1-item h-100">
-                        <figure class="architecture1-media"><img src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product4.jpg" alt="Điều khiển năng lượng mặt trời/ độ trong suốt" width="376" height="283" loading="lazy" /></figure>
+                        <figure class="architecture1-media"><img class="w-100"src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product4.jpg" alt="Điều khiển năng lượng mặt trời/ độ trong suốt" width="376" height="283" loading="lazy" /></figure>
                         <div class="architecture1-details">
                             <h3 class="architecture1-title text-primary mt-3 mb-1 h4 font-weight-normal">Điều khiển năng lượng mặt trời/ độ trong suốt</h3>
                             <div class="architecture1-content text-justify">
@@ -264,7 +264,7 @@ get_header();
                 </div>
                 <div class="col-6 col-md-4 mb-md-10 mb-5">
                     <div class="architecture1-item h-100">
-                        <figure class="architecture1-media"><img src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product5.jpg" alt="Điều khiển năng lượng mặt trời/ độ trong suốt" width="376" height="283" loading="lazy" /></figure>
+                        <figure class="architecture1-media"><img class="w-100"src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product5.jpg" alt="Điều khiển năng lượng mặt trời/ độ trong suốt" width="376" height="283" loading="lazy" /></figure>
                         <div class="architecture1-details">
                             <h3 class="architecture1-title text-primary mt-3 mb-1 h4 font-weight-normal">Điều khiển năng lượng mặt trời/ độ trong suốt</h3>
                             <div class="architecture1-content text-justify">
@@ -275,7 +275,7 @@ get_header();
                 </div>
                 <div class="col-6 col-md-4 mb-md-10 mb-5">
                     <div class="architecture1-item h-100">
-                        <figure class="architecture1-media"><img src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product6.jpg" alt="Điều khiển năng lượng mặt trời/ độ trong suốt" width="376" height="283" loading="lazy" /></figure>
+                        <figure class="architecture1-media"><img class="w-100"src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product6.jpg" alt="Điều khiển năng lượng mặt trời/ độ trong suốt" width="376" height="283" loading="lazy" /></figure>
                         <div class="architecture1-details">
                             <h3 class="architecture1-title text-primary mt-3 mb-1 h4 font-weight-normal">Điều khiển năng lượng mặt trời/ độ trong suốt</h3>
                             <div class="architecture1-content text-justify">
@@ -291,7 +291,7 @@ get_header();
         <div class="section-wrapper" style="background: url(<?php echo THEME_ASSET_URL ?>images/architecture/architecture-img4.png), #fff 50% / cover no-repeat">
             <div class="container">
                 <div class="section-header">
-                    <div class="section-subtitle h5 font-weight-normal mb-5">02 <span class="text-primary title-line-left text-normal">Phim kiểm soát tầm nhìn</span></div>
+                    <div class="section-subtitle h5 font-weight-normal">02 <span class="text-primary title-line-left text-normal">Phim kiểm soát tầm nhìn</span></div>
                     <h2 class="section-title font-weight-semibold">
                         Phim kiểm soát<br /> tầm nhìn
                     </h2>
@@ -300,7 +300,7 @@ get_header();
                 </div>
                 <div class="section-body mb-5">
                     <div class="section-subtitle h1 font-weight-normal text-primary mb-5 mb-md-10">Tính năng</div>
-                    <div class="row">
+                    <div class="row gutter-xl architecture-item-list">
                         <div class="col-6 col-md-4 mb-md-10 mb-5">
                             <div class="architecture-item h-100">
                                 <figure class="architecture-icon"><img src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-icon11.png" alt="Kiểm soát tầm nhìn" width="80" height="80" loading="lazy" /></figure>
@@ -361,7 +361,7 @@ get_header();
                 <div class="section-footer row">
                     <div class="col-6 col-md-4 mb-md-10 mb-5">
                         <div class="architecture1-item h-100">
-                            <figure class="architecture1-media"><img src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product7.jpg" alt="Kiểm soát tầm nhìn" width="376" height="283" loading="lazy" /></figure>
+                            <figure class="architecture1-media"><img class="w-100"src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product7.jpg" alt="Kiểm soát tầm nhìn" width="376" height="283" loading="lazy" /></figure>
                             <div class="architecture1-details">
                                 <h3 class="architecture1-title text-primary mt-3 mb-1 h4 font-weight-normal">Kiểm soát tầm nhìn</h3>
                                 <div class="architecture1-content text-justify">
@@ -372,7 +372,7 @@ get_header();
                     </div>
                     <div class="col-6 col-md-4 mb-md-10 mb-5">
                         <div class="architecture1-item h-100">
-                            <figure class="architecture1-media"><img src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product7.jpg" alt="Kiểm soát tầm nhìn" width="376" height="283" loading="lazy" /></figure>
+                            <figure class="architecture1-media"><img class="w-100"src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product7.jpg" alt="Kiểm soát tầm nhìn" width="376" height="283" loading="lazy" /></figure>
                             <div class="architecture1-details">
                                 <h3 class="architecture1-title text-primary mt-3 mb-1 h4 font-weight-normal">Kiểm soát tầm nhìn</h3>
                                 <div class="architecture1-content text-justify">
@@ -389,14 +389,14 @@ get_header();
         <div class="section-wrapper" style="background: url(<?php echo THEME_ASSET_URL ?>images/architecture/architecture-img5.png), #fff 50% / cover no-repeat">
             <div class="container">
                 <div class="section-header">
-                    <div class="section-subtitle h5 font-weight-normal mb-5">03 <span class="text-primary title-line-left text-normal">Phim dán trang trí</span></div>
+                    <div class="section-subtitle h5 font-weight-normal">03 <span class="text-primary title-line-left text-normal">Phim dán trang trí</span></div>
                     <h2 class="section-title font-weight-semibold">Phim dán trang trí</h2>
                     <div class="section-des des-title h5 font-weight-normal text-justify"></div>
                     <p>Một tấm phim thiết kế để trang trí kính làm dịu sự truyền ánh sáng và tạo ra một không gian yên bình. Bạn có thể tự do tạo ra một không gian thư giãn với hình ảnh đậm chất Nhật Bản, một không gian phong cách với nhiều chấm và họa tiết cách điệu.</p>
                 </div>
                 <div class="section-body mb-5">
                     <div class="section-subtitle h1 font-weight-normal text-primary mb-5 mb-md-10">Tính năng</div>
-                    <div class="row">
+                    <div class="row gutter-xl architecture-item-list">
                         <div class="col-6 col-md-4 mb-md-10 mb-5">
                             <div class="architecture-item h-100">
                                 <figure class="architecture-icon"><img src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-icon16.png" alt="Chống ẩm" width="80" height="80" loading="lazy" /></figure>
@@ -468,7 +468,7 @@ get_header();
                 <div class="section-footer row">
                     <div class="col-6 col-md-4 mb-md-10 mb-5">
                         <div class="architecture1-item h-100">
-                            <figure class="architecture1-media"><img src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product8.jpg" alt="Phim trang trí (Phân cấp)" width="376" height="283" loading="lazy" /></figure>
+                            <figure class="architecture1-media"><img class="w-100"src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product8.jpg" alt="Phim trang trí (Phân cấp)" width="376" height="283" loading="lazy" /></figure>
                             <div class="architecture1-details">
                                 <h3 class="architecture1-title text-primary mt-3 mb-1 h4 font-weight-normal">Phim trang trí (Phân cấp)</h3>
                                 <div class="architecture1-content text-justify">
@@ -479,7 +479,7 @@ get_header();
                     </div>
                     <div class="col-6 col-md-4 mb-md-10 mb-5">
                         <div class="architecture1-item h-100">
-                            <figure class="architecture1-media"><img src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product9.jpg" alt="Phim trang trí (kiểu Nhật)" width="376" height="283" loading="lazy" /></figure>
+                            <figure class="architecture1-media"><img class="w-100"src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product9.jpg" alt="Phim trang trí (kiểu Nhật)" width="376" height="283" loading="lazy" /></figure>
                             <div class="architecture1-details">
                                 <h3 class="architecture1-title text-primary mt-3 mb-1 h4 font-weight-normal">Phim trang trí (kiểu Nhật)</h3>
                                 <div class="architecture1-content text-justify">
@@ -490,7 +490,7 @@ get_header();
                     </div>
                     <div class="col-6 col-md-4 mb-md-10 mb-5">
                         <div class="architecture1-item h-100">
-                            <figure class="architecture1-media"><img src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product10.jpg" alt="Phim trang trí (mờ/dập nổi)" width="376" height="283" loading="lazy" /></figure>
+                            <figure class="architecture1-media"><img class="w-100"src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product10.jpg" alt="Phim trang trí (mờ/dập nổi)" width="376" height="283" loading="lazy" /></figure>
                             <div class="architecture1-details">
                                 <h3 class="architecture1-title text-primary mt-3 mb-1 h4 font-weight-normal">Phim trang trí (mờ/dập nổi)</h3>
                                 <div class="architecture1-content text-justify">
@@ -501,7 +501,7 @@ get_header();
                     </div>
                     <div class="col-6 col-md-4 mb-md-10 mb-5">
                         <div class="architecture1-item h-100">
-                            <figure class="architecture1-media"><img src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product11.jpg" alt="Phim trang trí (mờ/dập nổi)" width="376" height="283" loading="lazy" /></figure>
+                            <figure class="architecture1-media"><img class="w-100"src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product11.jpg" alt="Phim trang trí (mờ/dập nổi)" width="376" height="283" loading="lazy" /></figure>
                             <div class="architecture1-details">
                                 <h3 class="architecture1-title text-primary mt-3 mb-1 h4 font-weight-normal">Phim trang trí (mờ/dập nổi)</h3>
                                 <div class="architecture1-content text-justify">
@@ -512,7 +512,7 @@ get_header();
                     </div>
                     <div class="col-6 col-md-4 mb-md-10 mb-5">
                         <div class="architecture1-item h-100">
-                            <figure class="architecture1-media"><img src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product12.jpg" alt="Phim trang trí (mờ/dập nổi)" width="376" height="283" loading="lazy" /></figure>
+                            <figure class="architecture1-media"><img class="w-100"src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product12.jpg" alt="Phim trang trí (mờ/dập nổi)" width="376" height="283" loading="lazy" /></figure>
                             <div class="architecture1-details">
                                 <h3 class="architecture1-title text-primary mt-3 mb-1 h4 font-weight-normal">Phim trang trí (mờ/dập nổi)</h3>
                                 <div class="architecture1-content text-justify">
@@ -523,7 +523,7 @@ get_header();
                     </div>
                     <div class="col-6 col-md-4 mb-md-10 mb-5">
                         <div class="architecture1-item h-100">
-                            <figure class="architecture1-media"><img src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product13.jpg" alt="Phim trang trí (mờ/dập nổi)" width="376" height="283" loading="lazy" /></figure>
+                            <figure class="architecture1-media"><img class="w-100"src="<?php echo THEME_ASSET_URL ?>images/architecture/architecture-product13.jpg" alt="Phim trang trí (mờ/dập nổi)" width="376" height="283" loading="lazy" /></figure>
                             <div class="architecture1-details">
                                 <h3 class="architecture1-title text-primary mt-3 mb-1 h4 font-weight-normal">Phim trang trí (mờ/dập nổi)</h3>
                                 <div class="architecture1-content text-justify">

@@ -108,13 +108,21 @@
     }
   }
   .architecture-item {
-    padding-bottom: 2rem;
-    border-bottom: 1px solid rgba(165,163,169,.5);
+    padding-top: 2rem;
+    border-top: 1px solid rgba(165,163,169,.5);
     @include mq(md, 'max') {
       .architecture-title {
         font-size: 1.6rem;
         line-height: 1.3;
       }
+    }
+  }
+  .architecture-item-list {
+    > *:nth-child(1) .architecture-item,
+    > *:nth-child(3) .architecture-item,
+    > *:nth-child(2) .architecture-item {
+      border-top: 0;
+      padding-top: 0;
     }
   }
   .architecture1-item {
@@ -226,7 +234,7 @@
 
   .architecture-section3 {
     --fontSize: clamp(3rem,5vw,6rem);
-    --paddingTop: 10vh;
+    --paddingTop: 15vh;
     --paddingBot: 15vh;
     background-repeat:no-repeat !important;
     background-position: top right;
@@ -241,9 +249,17 @@
         color: $body-color;
       }
     }
+    @include mq('1280px') {
+      .section-subtitle {
+        margin-bottom: 10vh;
+      }
+    }
     @include mq(xl, 'max') {
       --paddingTop: 5vh;
       --paddingBot: 5vh;
+      .section-subtitle {
+        margin-bottom: 2.5rem;
+      }
     }
     @include mq(md, 'max') {
       --paddingTop: 3rem;
@@ -253,7 +269,7 @@
 
   .architecture-section4 {
     --fontSize: clamp(3rem,5vw,6rem);
-    --paddingTop: 20vh;
+    --paddingTop: 25vh;
     --paddingBot: 15vh;
     .section {
       &-wrapper {
@@ -278,12 +294,20 @@
           border-top-left-radius:  30vw;
         }
     }
+    @include mq('1280px') {
+      .section-subtitle {
+        margin-bottom: 10vh;
+      }
+    }
     @include mq(xl, 'max') {
       --paddingTop: 5vh;
       --paddingBot: 5vh;
       .section {
         &-wrapper {
           border-top-left-radius: 10vw;
+        }
+        &-subtitle {
+          margin-bottom: 2.5rem;
         }
       }
     }
@@ -302,6 +326,7 @@
         padding-top: var(--paddingTop);
         border-top-right-radius: 15vw;
         background-repeat:no-repeat !important;
+        background-position-y: -10vh !important;    
       }
       &-header {
         width: 600px;
@@ -320,12 +345,22 @@
           border-top-right-radius:  30vw;
         }
     }
+
+    @include mq('1280px') {
+      .section-subtitle {
+        margin-bottom: 10vh;
+      }
+    }
+
     @include mq(xl, 'max') {
       --paddingTop: 5vh;
       --paddingBot: 5vh;
       .section {
         &-wrapper {
           border-top-right-radius: 10vw;
+        }
+        &-subtitle {
+          margin-bottom: 2.5rem;
         }
       }
     }
@@ -389,6 +424,7 @@
   .adn-section2 {
     --fontSize: clamp(4rem,5vw,6rem);
     background-color: var(--bgMain);
+    min-height: auto;
     .section {
       &-title {
         font-size: var(--fontSize);
@@ -495,14 +531,15 @@
   }
   
   .adn-section3 {
-    --fontSize: clamp(3rem,5vw,4rem);
+    --fontSize: clamp(3rem,5vw,3.5rem);
     .section {
       &-title {
         font-size: var(--fontSize);
-        line-height: 1.1;
+        line-height: 1.3;
+        font-weight: $font-weight-semibold;
       }
       &-details {
-        width: 450px;
+        width: 475px;
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -540,6 +577,12 @@
         }
       }
     }
+    @include mq('1280px') {
+      .section-item:not(:last-child) {
+        margin-bottom: 10rem;
+      }
+    }
+    
     @include mq(xl, 'max') {
       .section {
         &-media {
@@ -550,6 +593,9 @@
         &-details {
           padding-top: 5rem;
           padding-bottom: 5rem;
+        }
+        &-item:not(:last-child) {
+          margin-bottom: 5rem;
         }
       }
     }
@@ -762,6 +808,14 @@
       }
     }
   }
+  .automotive-item-list {
+    > *:nth-child(1) .automotive-item,
+    > *:nth-child(3) .automotive-item,
+    > *:nth-child(2) .automotive-item {
+      border-top: 0;
+      padding-top: 0;
+    }
+  }
   .automotive-item1 {
     --fontSize: clamp(4rem,3.5vw,4.5rem);
     --fontSize1: clamp(1.8rem,2vw,2.2rem);
@@ -834,7 +888,6 @@
   .automotive-section1 {
     --paddingTop: 25vh;
     --paddingBot: 25vh;
-    --fontSize: clamp(3rem,5vw,4rem);
     background-position: top center !important;
     .section {
       &-header {
@@ -846,8 +899,7 @@
       }
       &-title {
           font-size: var(--fontSize);
-          line-height: 1.1;
-          color: $body-color;
+          line-height: 115%;
       }
       &-des {
         line-height: 2;
@@ -960,7 +1012,11 @@
     @include mq("1366px", "max") {
       background-position-y: -40vh !important;
     }
-    @include mq("1280px", "max") {}
+    @include mq('1280px') {
+      .section-title {
+        margin-bottom: 10vh;
+      }
+    }
     @include mq(xl, 'max') {
         --paddingTop: 5vh;
         --paddingBot: 5vh;
@@ -970,6 +1026,9 @@
         .section-wrapper {
             padding-left: 3rem;
             padding-right: 3rem;
+        }
+        .section-title {
+          margin-bottom: 5rem;
         }
     }
     @include mq(lg, 'max') {
@@ -1031,7 +1090,6 @@
       margin-bottom:3rem;
       .btn {
         margin-left: 2rem;
-        min-width: 200px;
       }
       &-title {
         font-size: 2.5rem;

@@ -44,8 +44,8 @@ get_header();
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
                     <div class="section-details">
-                        <div class="section-subtitle h5 font-weight-normal mb-5">01 <span class="title-line-left text-normal">Công nghệ</span></div>
-                        <h2 class="section-title text-primary font-weight-normal">Công nghệ cải tiến bề mặt (lớp phủ cứng)</h2>
+                        <div class="section-subtitle h5 font-weight-normal mb-10">01 <span class="title-line-left text-normal">Công nghệ</span></div>
+                        <h2 class="section-title text-primary">Công nghệ cải tiến bề mặt (lớp phủ cứng)</h2>
                         <div class="section-content des-title text-justify mb-5">
                             <p>Lớp trên cùng của phim là lớp phủ cứng có vai trò chống trầy xước.</p>
                             <p>Tại Wincos, bằng cách tích hợp một loại vật liệu đặc biệt có tác dụng cắt tia hồng ngoại vào lớp mỏng này, có thể tạo thành một lớp áo cứng không chỉ chống trầy xước mà còn có khả năng cách nhiệt tuyệt vời.</p>
@@ -63,8 +63,8 @@ get_header();
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
                     <div class="section-details">
-                        <div class="section-subtitle h5 font-weight-normal mb-5">02 <span class="title-line-left text-normal">Công nghệ</span></div>
-                        <h2 class="section-title text-primary font-weight-normal">Công nghệ cải tiến bề mặt (chất nền bề mặt)</h2>
+                        <div class="section-subtitle h5 font-weight-normal mb-10">02 <span class="title-line-left text-normal">Công nghệ</span></div>
+                        <h2 class="section-title text-primary">Công nghệ cải tiến bề mặt (chất nền bề mặt)</h2>
                         <div class="section-content des-title text-justify mb-5">
                             <p>Chất nền bề mặt là cơ sở đánh giá chất lượng của phim cửa sổ.</p>
                             <p>Lintec là công ty đầu tiên trong ngành phát triển "phim kiểm soát khả năng hiển thị" xuất hiện trong suốt hoặc mờ tùy thuộc vào góc nhìn bằng công nghệ cán màng, mang lại các chức năng đặc biệt cho chất nền phim.</p>
@@ -82,8 +82,8 @@ get_header();
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
                     <div class="section-details">
-                        <div class="section-subtitle h5 font-weight-normal mb-5">03 <span class="title-line-left text-normal">Công nghệ</span></div>
-                        <h2 class="section-title text-primary font-weight-normal">Công nghệ ứng dụng chất keo dính</h2>
+                        <div class="section-subtitle h5 font-weight-normal mb-10">03 <span class="title-line-left text-normal">Công nghệ</span></div>
+                        <h2 class="section-title text-primary">Công nghệ ứng dụng chất keo dính</h2>
                         <div class="section-content des-title text-justify mb-5">
                             <p>Lớp keo đóng vai trò quan trọng khi là phần tiếp xúc trực tiếp với bề mặt kính.</p>
                             <p>Phim cách nhiệt Wincos cắt hơn 99% tia UV có hại cho cơ thể con người bằng cách bổ sung chất hấp thụ tia UV vào chất kết dính.</p>
@@ -101,8 +101,8 @@ get_header();
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
                     <div class="section-details">
-                        <div class="section-subtitle h5 font-weight-normal mb-5">04 <span class="title-line-left text-normal">Công nghệ</span></div>
-                        <h2 class="section-title text-primary font-weight-normal">Công nghệ sản xuất lớp phim tách</h2>
+                        <div class="section-subtitle h5 font-weight-normal mb-10">04 <span class="title-line-left text-normal">Công nghệ</span></div>
+                        <h2 class="section-title text-primary">Công nghệ sản xuất lớp phim tách</h2>
                         <div class="section-content des-title text-justify mb-5">
                             <p>Lớp phim tách bảo vệ chất kết dính cũng có công nghệ hỗ trợ hiệu suất của phim cách nhiệt. Để đảm bảo nhìn rõ sau khi dán phim, cần dán lớp keo có độ dày đồng đều lên phim tách với bề mặt phẳng và nhẵn. Cũng cần kiểm soát lực bóc để có thể bóc màng phim tách một cách trơn tru trong quá trình lắp đặt. Lintec có lợi thế là có thể thiết kế, phát triển và sản xuất phim tách trong nhà, điều hiếm thấy trong ngành công nghiệp phim cách nhiệt.</p>
                         </div>

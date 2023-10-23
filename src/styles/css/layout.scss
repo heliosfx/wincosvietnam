@@ -127,20 +127,11 @@
 }
 .btn {
   border-width: 1px;
+  min-width: 200px;
 }
 body {
-  --borderRadiusSection: 40rem;
   --bgMain: #F1F3F4;
   background-color: var(--bgMain);
-  @include mq(xl, 'max') {
-    --borderRadiusSection: 30rem;
-  }
-  @include mq(lg, 'max') {
-    --borderRadiusSection: 20rem;
-  }
-  @include mq(md, 'max') {
-    --borderRadiusSection: 10rem;
-  }
 }
 .breadcrumb {
   --paddingTop: calc(10vh + 73px);
@@ -166,13 +157,28 @@ body {
   }
 }
 .section-border-radius {
-  margin-bottom: calc(var(--borderRadiusSection)*-1);
+  --marginBot: -18rem;
+  --marginBot1: 16rem;
+  margin-bottom: var(--marginBot);
   > .container {
-    margin-bottom: var(--borderRadiusSection);
+    margin-bottom: var(--marginBot1);
   }
   + .section-border-radius-next {
-    border-top-right-radius: var(--borderRadiusSection);
+    --borderRadiusSection: 46.5rem/20rem;
+    border-radius: var(--borderRadiusSection);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     overflow: hidden;
+    @include mq(xl, 'max') {
+      --borderRadiusSection: 30rem;
+    }
+    @include mq(lg, 'max') {
+      --borderRadiusSection: 20rem;
+    }
+    @include mq(md, 'max') {
+      --borderRadiusSection: 10rem;
+    }
   }
 }
 /*#region Mobile responsive section styles*/

@@ -10,8 +10,8 @@ get_header();
         <div class="breadcrumb">
             <div class="breadcrumb-header">
                 <div class="container">
-                    <div class="breadcrumb-subtitle text-white">Phim cách nhiệt Wincos</div>
-                    <h1 class="text-white text-uppercase">Phim cách nhiệt ô tô</h1>
+                    <div class="section-subtitle h5 text-white font-weight-normal">Phim cách nhiệt Wincos</div>
+                    <h1 class="section-title text-white">Phim cách nhiệt ô tô</h1>
                 </div>
             </div>
         </div>
@@ -27,7 +27,7 @@ get_header();
                 </div>
                 <div class="mt-auto">
                     <div class="section-body mb-2">
-                        <div class="row gutter-lg">
+                        <div class="row gutter-xl">
                             <div class="col-6 col-lg-3 mb-3">
                                 <div class="item">
                                     <div class="item-number">
@@ -90,7 +90,7 @@ get_header();
         <div class="container text-white">
             <div class="section-wrapper">
                 <div class="section-header">
-                    <h2 class="section-title text-white w-100 font-weight-bold mb-5 mb-md-10">Sản phẩm</h2>
+                    <h2 class="section-title text-white w-100 font-weight-bold">Sản phẩm</h2>
                     <div class="section-des des-title font-weight-semibold h3 text-primary mb-5" style="letter-spacing: 1.829px">
                         <p>Phim dán hiệu suất cao<br /> thay đổi cách bạn lái xe</p>
                     </div>
@@ -110,7 +110,7 @@ get_header();
     <section class="automotive-section3 pb-10" style="background: linear-gradient(180deg, #000 0%, rgba(32, 32, 32, 0.95) 48.39%, rgba(47, 47, 47, 0.85) 77.08%, rgba(98, 98, 98, 0.85) 100%)">
         <div class="container">
             <div class="section-body pb-10">
-                <div class="row gutter-lg">
+                <div class="row gutter-xl automotive-item-list">
                     <div class="col-6 col-md-4 mt-md-10 mt-5">
                         <div class="automotive-item h-100">
                             <figure class="automotive-icon"><img src="<?php echo THEME_ASSET_URL ?>images/automotive/automotive-icon1.png" alt="Hiệu suất cách nhiệt vượt trội" width="80" height="80" loading="lazy" /></figure>
@@ -201,7 +201,7 @@ get_header();
                 <div class="col-md-4 mb-5">
                     <div class="automotive-item1 text-white">
                         <figure class="automotive-media p-relative">
-                            <img src="<?php echo THEME_ASSET_URL ?>images/automotive/automotive-product1.jpg" alt="Siêu cấp" width="370" height="475" loading="lazy" />
+                            <img class="w-100" src="<?php echo THEME_ASSET_URL ?>images/automotive/automotive-product1.jpg" alt="Siêu cấp" width="370" height="475" loading="lazy" />
                             <div class="automotive-details p-absolute">
                                 <h3 class="automotive-title text-white">Siêu cấp</h3>
                                 <div class="automotive-meta mt-auto">
@@ -219,7 +219,7 @@ get_header();
                 <div class="col-md-4 mb-5">
                     <div class="automotive-item1 text-white">
                         <figure class="automotive-media p-relative">
-                            <img src="<?php echo THEME_ASSET_URL ?>images/automotive/automotive-product2.jpg" alt="Tiêu chuẩn" width="370" height="475" loading="lazy" />
+                            <img class="w-100" src="<?php echo THEME_ASSET_URL ?>images/automotive/automotive-product2.jpg" alt="Tiêu chuẩn" width="370" height="475" loading="lazy" />
                             <div class="automotive-details p-absolute">
                                 <h3 class="automotive-title text-white">Tiêu chuẩn</h3>
                                 <div class="automotive-meta mt-auto">
@@ -240,15 +240,17 @@ get_header();
     <section class="automotive-section4" style="background: url(<?php echo THEME_ASSET_URL ?>images/automotive/automotive-img6.jpg), lightgray 50% / cover no-repeat">
         <div class="container">
             <h2 class="text-white section-title mb-md-10 mb-5">Đọc thêm</h2>
-            <div class="section-body text-white">
-                <div class="item d-flex align-items-center flex-wrap">
+            <div class="section-body text-white d-flex align-items-center flex-wrap">
+                    <a class="btn btn-white btn-outline text-normal btn-ellipse mr-3" href="<?=home_url('faq') ?>/" title="Câu hỏi thường gặp">Câu hỏi thường gặp</a>
+                    <a class="btn btn-white btn-outline text-normal btn-ellipse" href="<?=home_url('tech') ?>/" title="Thông số kỹ thuật">Thông số kỹ thuật</a>
+                <!-- <div class="item d-flex align-items-center flex-wrap">
                     <div class="item-title">Câu hỏi thường gặp</div>
                     <a class="btn btn-white btn-outline text-normal btn-ellipse" href="<?=home_url('faq') ?>/" title="Q&A">Q&A</a>
                 </div>
                 <div class="item d-flex align-items-center flex-wrap">
                     <div class="item-title">Thông số kỹ thuật</div>
                     <a class="btn btn-white btn-outline text-normal btn-ellipse">Optical Data</a>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
