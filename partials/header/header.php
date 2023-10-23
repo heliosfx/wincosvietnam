@@ -26,7 +26,8 @@
     </div>
 </div>
 <header class="d-none d-lg-block d-md-none">
-    <div class="header-body bb sticky-content fix-top sticky-header">
+    <!-- <div class="header-body bb sticky-content fix-top sticky-header"> -->
+    <div class="header-body bb">
         <div class="container">
             <div class="header-body-wrapper bg-white d-flex justify-content-between align-items-center">
                 <div class="header-body-left logo-wrapper">
